@@ -4405,6 +4405,7 @@ const PODCASTS={
   en:{t:"The test of science",
       d:"From Still's principles to the meta-analyses of 2026, what research has confirmed, transformed or ruled out.",f:null}}
 };
+function canAAC(){try{return !!document.createElement('audio').canPlayType('audio/mp4; codecs="mp4a.40.2"')}catch(e){return true}}
 /* langue de l'épisode, null = suit la langue du site */
 let podLang=null;
 function podL(){return podLang||lang}
@@ -4415,7 +4416,11 @@ function buildPodcasts(){
     const key=box.dataset.pod, P=PODCASTS[key]; if(!P) return;
     const e=P[L]||P.fr, fr=(L==='fr');
     let media;
-    if(e.f){
+    if(e.f&&!canAAC()){
+      media='<div class="actions"><a class="play" href="'+e.f+'" download>'+(fr?'Télécharger l\'épisode':'Download the episode')+'</a></div>'+
+        '<div class="pod-note">'+(fr?'Votre navigateur ne sait pas lire ce format audio. Le fichier reste téléchargeable.'
+                                    :'Your browser cannot play this audio format. The file can still be downloaded.')+'</div>';
+    }else if(e.f){
       media='<audio class="pod-audio" controls preload="metadata" src="'+e.f+'"></audio>'+
         '<div class="pod-note">'+(fr?'Épisode disponible en français et en anglais. La langue suit celle du site, ce bouton permet de changer seulement l\'audio.'
                                     :'Episode available in French and English. It follows the site language, this button changes the audio only.')+'</div>';
@@ -4441,11 +4446,9 @@ function buildPodcasts(){
         if(n) n.remove();
         const t=box.querySelector('.podlang'); if(t) t.remove();};
       au.addEventListener('error',fallback);
-      au.addEventListener('stalled',()=>{if(!au.duration)fallback()});
       if(location.protocol!=='file:'){
         fetch(e.f,{method:'HEAD'}).then(r=>{if(!r.ok)fallback()}).catch(()=>fallback());
       }
-      setTimeout(()=>{if(au.isConnected&&!(au.duration>0))fallback()},6000);
     }
   });
 }
