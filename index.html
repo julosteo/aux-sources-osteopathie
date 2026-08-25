@@ -89,7 +89,7 @@ nav.mainnav a.active{background:var(--bleu);color:var(--navy);font-weight:700}
 .badge{display:inline-block;background:var(--bleu-soft);color:var(--navy);font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 12px;border-radius:999px}
 .badge.or{background:#F6EBC8;color:#7A5E10}
 /* ---------- SECTION HEADINGS ---------- */
-.sect{margin-top:54px}
+.sect{margin-top:54px;scroll-margin-top:96px}
 .sect > .kick{color:var(--accent);letter-spacing:2.5px;text-transform:uppercase;font-size:12px;font-weight:700}
 .sect > h2{font-size:clamp(26px,3.4vw,36px);margin-top:6px;margin-bottom:18px}
 .sect > h3{font-size:22px;margin:30px 0 10px}
@@ -366,6 +366,11 @@ details.src .inner{padding:4px 22px 20px;font-size:14.5px}
   .doc .transcript{padding:15px 15px;font-size:15.5px}
   .doc .vo .inner{padding:14px 15px}
 }
+/* ---------- CHAPITRE FRANCE ---------- */
+.srcnote{font-size:12.5px;color:var(--ink-soft);border-left:3px solid #E4D9BF;padding-left:14px;margin:16px 0;max-width:76ch;line-height:1.6}
+.srcnote a{color:var(--accent)}
+.mini{font-size:12.5px;color:var(--ink-soft)}
+.fr-tl .tl-item{max-width:860px}
 /* ---------- I18N ---------- */
 body[data-lang="fr"] .L-en{display:none !important}
 body[data-lang="en"] .L-fr{display:none !important}
@@ -452,6 +457,7 @@ body[data-lang="en"] .L-fr{display:none !important}
     <a href="#ch2" data-p="ch2"></a>
     <a href="#ch3" data-p="ch3"></a>
     <a href="#ch4" data-p="ch4"></a>
+    <a href="#ch5" data-p="ch5"></a>
     <a href="#figures" data-p="figures"></a>
     <a href="#frise" data-p="frise"></a>
     <a href="#galerie" data-p="galerie"></a>
@@ -502,13 +508,13 @@ body[data-lang="en"] .L-fr{display:none !important}
   <div class="wrap">
     <div class="sect L L-fr">
       <div class="kick">Le parcours</div>
-      <h2>Quatre chapitres, une trajectoire</h2>
+      <h2>Cinq chapitres, une trajectoire</h2>
       <p class="leadin" style="margin-bottom:26px">Chaque chapitre s'ouvre par un podcast qui permet d'entrer dans le sujet par l'écoute, puis déroule le récit avec ses sources, ses images d'archives et ses questions ouvertes. À la fin de chaque chapitre, un quiz et une question de réflexion permettent de vérifier ce que l'on a retenu.</p>
       <div class="grid c2 homecards"></div>
     </div>
     <div class="sect L L-en">
       <div class="kick">The journey</div>
-      <h2>Four chapters, one trajectory</h2>
+      <h2>Five chapters, one trajectory</h2>
       <p class="leadin" style="margin-bottom:26px">Each chapter opens with a podcast, so you can enter the subject by listening, then unfolds the story with its sources, archival images and open questions. At the end of each chapter, a quiz and a reflection question let you check what you have taken in.</p>
       <div class="grid c2 homecards"></div>
     </div>
@@ -2271,6 +2277,7 @@ body[data-lang="en"] .L-fr{display:none !important}
         <a href="#" onclick="jumpTo('c3-3');return false">La voie britannique</a>
         <a href="#" onclick="jumpTo('c3-9');return false">L'Europe et le monde</a>
         <a href="#" onclick="jumpTo('c3-4');return false">La France, 1913-2026</a>
+        <a href="#" onclick="jumpTo('c3-10');return false">La reconnaissance dans le monde</a>
       </div>
     </div>
     <div class="sect L L-en" style="padding-bottom:8px">
@@ -2285,6 +2292,7 @@ body[data-lang="en"] .L-fr{display:none !important}
         <a href="#" onclick="jumpTo('c3-3');return false">The British path</a>
         <a href="#" onclick="jumpTo('c3-9');return false">Europe and the world</a>
         <a href="#" onclick="jumpTo('c3-4');return false">France, 1913-2026</a>
+        <a href="#" onclick="jumpTo('c3-10');return false">Recognition worldwide</a>
       </div>
     </div>
     <div class="sect L L-fr" data-anchor="c3-1" id="c3-1">
@@ -2722,6 +2730,7 @@ body[data-lang="en"] .L-fr{display:none !important}
     <div class="sect L L-fr" data-anchor="c3-4" id="c3-4">
       <div class="kick">Partie IX</div>
       <h2>La France, un siècle de combats (1913-2026)</h2>
+      <p class="mini" style="margin-bottom:14px">Vue d'ensemble. Le récit détaillé, les figures, la frise et les courants conceptuels se trouvent au <a href="#ch5" onclick="go('ch5');return false"><b>chapitre 5, En France</b></a>.</p>
       <h3>Les pionniers</h3>
       <div class="prose">
         <p>Premier jalon, le <em>Manuel pratique d'ostéopathie</em> de <strong>Moutin et Mann</strong> en 1913, écrit par un magnétiseur, signe des porosités de l'époque. Le véritable enracinement vient du docteur <strong>Robert Lavezzari</strong> (1886-1977), initié vers 1918 par Florence Gair, élève américaine de l'école de Kirksville. Consultations au dispensaire Hahnemann en 1932, ouvrage fondateur en 1949, puis <strong>Société Française d'Ostéopathie</strong> en 1951-52, réservée aux médecins. En parallèle, le kinésithérapeute <strong>Paul Gény</strong> fonde à Paris l'<strong>École Française d'Ostéopathie</strong>, en 1950-51 selon les sources syndicales, en 1956-57 selon d'autres, belle occasion de rappeler que même les dates récentes se discutent, avec l'ostéopathe britannique Thomas Dummer. Troisième voie enfin, la médecine manuelle universitaire de <strong>Robert Maigne</strong>, qui acclimate la manipulation dans l'hôpital public en la séparant soigneusement du mot « ostéopathie ».</p>
@@ -2757,13 +2766,14 @@ body[data-lang="en"] .L-fr{display:none !important}
       <div class="histbox">
         <span class="tag">Fenêtre internationale 2026</span>
         <h4>L'Italie, laboratoire européen</h4>
-        <p>Treize pays européens réglementent aujourd'hui l'ostéopathie, dont le Royaume-Uni depuis 1993, la France depuis 2002, la Suisse depuis 2013, le Danemark depuis 2018, ainsi que le Portugal, l'Islande et la Norvège. Le cas italien est le plus spectaculaire, avec la loi 3/2018 érigeant l'ostéopathie en <em>profession sanitaire</em>, le profil professionnel en 2021, la licence universitaire en 2023, et en <strong>mars-mai 2026</strong> les décrets d'équivalence qui organisent l'entrée des ostéopathes dans le système sanitaire national. À l'inverse, l'Allemagne, la Belgique et l'Espagne restent non réglementées. Deux modèles mondiaux persistent donc, le <strong>DO médecin américain</strong> et l'<strong>ostéopathe praticien de première intention non médecin</strong>, l'ironie de l'histoire étant que l'Europe est aujourd'hui plus stillienne, plus manuelle et plus autonome, que l'Amérique de Still.</p>
+        <p>Douze pays européens réglementent aujourd'hui l'ostéopathie par un texte statutaire, dont le Royaume-Uni depuis 1993, la France depuis 2002, la Suisse depuis 2007, le Danemark depuis 2018, ainsi que le Portugal, l'Islande et la Norvège. Le cas italien est le plus spectaculaire, avec la loi 3/2018 érigeant l'ostéopathie en <em>profession sanitaire</em>, le profil professionnel en 2021, la licence universitaire en 2023, et en <strong>mars-mai 2026</strong> les décrets d'équivalence qui organisent l'entrée des ostéopathes dans le système sanitaire national. À l'inverse, l'Allemagne, la Belgique et l'Espagne restent non réglementées. Deux modèles mondiaux persistent donc, le <strong>DO médecin américain</strong> et l'<strong>ostéopathe praticien de première intention non médecin</strong>, l'ironie de l'histoire étant que l'Europe est aujourd'hui plus stillienne, plus manuelle et plus autonome, que l'Amérique de Still.</p>
       </div>
       
     </div>
     <div class="sect L L-en" data-anchor="c3-4">
       <div class="kick">Part IX</div>
       <h2>France, a century of struggle (1913-2026)</h2>
+      <p class="mini" style="margin-bottom:14px">An overview. The detailed account, the figures, the timeline and the conceptual currents are in <a href="#ch5" onclick="go('ch5');return false"><b>chapter 5, France</b></a>.</p>
       <h3>The pioneers</h3>
       <div class="prose">
         <p>The first milestone, the <em>Manuel pratique d'ostéopathie</em> by <strong>Moutin and Mann</strong> in 1913, written by a magnetic healer, marks the porousness of the period. Real rooting came from Dr <strong>Robert Lavezzari</strong> (1886-1977), introduced to osteopathy around 1918 by Florence Gair, an American graduate of the Kirksville school. Consultations at the Hahnemann dispensary in 1932, a founding book in 1949, then the <strong>Société Française d'Ostéopathie</strong> in 1951-52, restricted to physicians. In parallel, the physiotherapist <strong>Paul Gény</strong> founded the <strong>École Française d'Ostéopathie</strong> in Paris, in 1950-51 according to professional bodies, in 1956-57 according to others, a fine reminder that even recent dates are disputed, together with the British osteopath Thomas Dummer. A third path was the academic manual medicine of <strong>Robert Maigne</strong>, who acclimatised manipulation within public hospitals while carefully keeping it apart from the word "osteopathy".</p>
@@ -2799,10 +2809,80 @@ body[data-lang="en"] .L-fr{display:none !important}
       <div class="histbox">
         <span class="tag">International window 2026</span>
         <h4>Italy, Europe's laboratory</h4>
-        <p>Thirteen European countries now regulate osteopathy, including the United Kingdom since 1993, France since 2002, Switzerland since 2013, Denmark since 2018, along with Portugal, Iceland and Norway. The Italian case is the most striking, with law 3/2018 establishing osteopathy as a <em>health profession</em>, the professional profile in 2021, the university degree in 2023, and in <strong>March-May 2026</strong> the equivalence decrees organising the entry of osteopaths into the national health system. Conversely Germany, Belgium and Spain remain unregulated. Two global models therefore persist, the <strong>American DO physician</strong> and the <strong>non-physician primary-contact osteopath</strong>, with the irony of history being that Europe is today more Stillian, more manual and more autonomous, than Still's own America.</p>
+        <p>Twelve European countries now regulate osteopathy under a statutory text, including the United Kingdom since 1993, France since 2002, Switzerland since 2007, Denmark since 2018, along with Portugal, Iceland and Norway. The Italian case is the most striking, with law 3/2018 establishing osteopathy as a <em>health profession</em>, the professional profile in 2021, the university degree in 2023, and in <strong>March-May 2026</strong> the equivalence decrees organising the entry of osteopaths into the national health system. Conversely Germany, Belgium and Spain remain unregulated. Two global models therefore persist, the <strong>American DO physician</strong> and the <strong>non-physician primary-contact osteopath</strong>, with the irony of history being that Europe is today more Stillian, more manual and more autonomous, than Still's own America.</p>
       </div>
       
     </div>
+    <div class="sect L L-fr" data-anchor="c3-10" id="c3-10">
+      <div class="kick">Partie X</div>
+      <h2>Qui reconnaît l'ostéopathie, et sous quel nom ?</h2>
+      <div class="prose">
+        <p>Il existe deux professions différentes derrière un même mot, et aucun tableau mondial n'a de sens sans cette distinction préalable.</p>
+        <ul>
+          <li><strong>Le modèle médical américain.</strong> Le <em>Doctor of Osteopathic Medicine</em> est un médecin de plein exercice, avec un cursus médical complet, un internat, le droit de prescrire et d'opérer, et toutes les spécialités ouvertes. Depuis 1973, le DO est reconnu à parité avec le MD dans les cinquante États. Ils sont plus de 167 000 en exercice.</li>
+          <li><strong>Le modèle non-médical européen.</strong> L'ostéopathe est un praticien manuel, non-médecin, formé spécifiquement en trois à cinq ans, dont le champ est limité aux troubles fonctionnels. C'est le modèle britannique, français, portugais, italien, suisse.</li>
+          <li><strong>Les modèles mixtes.</strong> Certains pays font coexister les deux voies avec des exigences différentes selon le diplôme d'origine, comme la France, l'Allemagne via le <em>Heilpraktiker</em>, ou la Russie où l'ostéopathie est devenue une spécialité médicale.</li>
+        </ul>
+        <p>Dire qu'un pays « reconnaît l'ostéopathie » ne dit donc presque rien tant qu'on n'a pas précisé <em>quelle</em> ostéopathie il reconnaît, et à qui il en réserve l'exercice.</p>
+        <p>En Europe, le rapport de référence est celui d'<strong>Osteopathy Europe</strong> (né de la fusion de l'EFO et du FORE en 2018), publié en octobre 2023. Il identifie <strong>douze pays européens statutairement régulés</strong>, soit Chypre, le Danemark, la Finlande, la France, l'Islande, le Liechtenstein, le Luxembourg, Malte, la Norvège, le Portugal, le Royaume-Uni et la Suisse, auxquels s'ajoute l'Italie dont la mise en œuvre s'achève en 2026. Deux normes structurent le champ, les <em>Benchmarks for training in osteopathy</em> de l'<strong>OMS</strong> (2010) et la norme européenne <strong>CEN EN 16686:2015</strong> sur la prestation de soins ostéopathiques.</p>
+      </div>
+    </div>
+
+    <div class="sect L L-en" data-anchor="c3-10">
+      <div class="kick">Part X</div>
+      <h2>Who recognises osteopathy, and under what name?</h2>
+      <div class="prose">
+        <p>There are two different professions behind one word, and no world table makes sense without that distinction first.</p>
+        <ul>
+          <li><strong>The American medical model.</strong> The <em>Doctor of Osteopathic Medicine</em> is a fully licensed physician, with a complete medical curriculum, a residency, prescribing and surgical rights, and every specialty open. Since 1973 the DO has been recognised on a par with the MD in all fifty states. More than 167,000 are in practice.</li>
+          <li><strong>The European non-medical model.</strong> The osteopath is a manual practitioner, not a physician, specifically trained over three to five years, with a scope limited to functional disorders. This is the British, French, Portuguese, Italian and Swiss model.</li>
+          <li><strong>Mixed models.</strong> Some countries run both routes with different requirements depending on the original degree, such as France, Germany through the <em>Heilpraktiker</em>, or Russia where osteopathy became a medical specialty.</li>
+        </ul>
+        <p>Saying that a country "recognises osteopathy" therefore says almost nothing until one specifies <em>which</em> osteopathy it recognises, and to whom it reserves practice.</p>
+        <p>In Europe the reference report is that of <strong>Osteopathy Europe</strong> (born of the 2018 merger of EFO and FORE), published in October 2023. It identifies <strong>twelve statutorily regulated European countries</strong>, namely Cyprus, Denmark, Finland, France, Iceland, Liechtenstein, Luxembourg, Malta, Norway, Portugal, the United Kingdom and Switzerland, with Italy completing its implementation in 2026. Two standards structure the field, the <strong>WHO</strong> <em>Benchmarks for training in osteopathy</em> (2010) and European standard <strong>CEN EN 16686:2015</strong> on osteopathic healthcare provision.</p>
+      </div>
+    </div>
+
+    <div class="sect">
+      <div class="kick L L-fr">Tableau</div>
+      <div class="kick L L-en">Table</div>
+      <h2 class="L L-fr">Le statut de l'ostéopathe, pays par pays</h2>
+      <h2 class="L L-en">The status of the osteopath, country by country</h2>
+      <div class="prose">
+        <p class="L L-fr">Légende. <b>🟢</b> profession réglementée de plein droit, titre protégé et registre statutaire · <b>🟡</b> reconnaissance légale mais registre volontaire ou mise en œuvre incomplète · <b>🟠</b> réforme votée, en cours de mise en œuvre · <b>🔴</b> non réglementée · <b>⚕️</b> réservée aux médecins ou à une profession de santé existante.</p>
+        <p class="L L-en">Legend. <b>🟢</b> fully regulated profession, protected title and statutory register · <b>🟡</b> legal recognition but voluntary register or incomplete implementation · <b>🟠</b> reform passed, implementation under way · <b>🔴</b> unregulated · <b>⚕️</b> reserved to physicians or to an existing health profession.</p>
+      </div>
+      <div class="tl-filters" id="wfilters"></div>
+      <div class="tablewrap">
+        <table class="t" id="wtable">
+          <thead><tr>
+            <th class="L L-fr">Pays</th><th class="L L-en">Country</th>
+            <th class="L L-fr">Année</th><th class="L L-en">Year</th>
+            <th class="L L-fr">Texte principal</th><th class="L L-en">Main text</th>
+            <th>Statut</th>
+            <th class="L L-fr">Modèle</th><th class="L L-en">Model</th>
+            <th class="L L-fr">Autorité / registre</th><th class="L L-en">Authority / register</th>
+            <th class="L L-fr">Praticiens</th><th class="L L-en">Practitioners</th>
+          </tr></thead>
+          <tbody id="wbody"></tbody>
+        </table>
+      </div>
+      <div class="histbox">
+        <div class="tag L L-fr">Deux erreurs qui circulent</div>
+        <div class="tag L L-en">Two errors in circulation</div>
+        <h4 class="L L-fr">À ne pas répéter</h4>
+        <h4 class="L L-en">Not to be repeated</h4>
+        <p class="L L-fr"><b>L'Allemagne n'a pas reconnu l'ostéopathie.</b> On lit souvent que « le Land de Hesse a reconnu l'ostéopathie ». Un règlement régional existe, il ne vaut pas reconnaissance nationale et l'Allemagne reste, au niveau fédéral, un pays sans loi spécifique, où l'ostéopathie relève du <em>Heilkunde</em> et donc des médecins ou des <em>Heilpraktiker</em>.</p>
+        <p class="L L-fr"><b>L'arrêté royal belge du 14 avril 2024 ne concerne pas les ostéopathes</b> mais les infirmiers. La Belgique reste régie par la loi Colla du 29 avril 1999, votée et jamais réellement mise en œuvre. Le titre n'y est toujours pas protégé dans les faits.</p>
+        <p class="L L-en"><b>Germany has not recognised osteopathy.</b> One often reads that "the state of Hesse recognised osteopathy". A regional regulation exists; it is not national recognition, and at federal level Germany remains a country without specific legislation, where osteopathy falls under <em>Heilkunde</em> and therefore under physicians or <em>Heilpraktiker</em>.</p>
+        <p class="L L-en"><b>The Belgian royal decree of 14 April 2024 does not concern osteopaths</b> but nurses. Belgium is still governed by the Colla Act of 29 April 1999, passed and never really implemented. The title remains unprotected in practice.</p>
+      </div>
+      <div class="srcnote">
+        <span class="L L-fr"><b>Sources.</b> Osteopathic International Alliance, <em>Global Report on Osteopathic Practice</em> · Osteopathy Europe (EFO/FORE), rapport d'octobre 2023 · OMS, <em>Benchmarks for training in osteopathy</em>, 2010 · norme CEN EN 16686:2015 · textes nationaux et sites des régulateurs (GOsC, AHPRA, Osteopathic Council of New Zealand, Styrelsen for Patientsikkerhed, Valvira, ACSS, AHPCSA, COFFITO). Les chiffres de praticiens sont des ordres de grandeur, tirés de sources et d'années hétérogènes.</span>
+        <span class="L L-en"><b>Sources.</b> Osteopathic International Alliance, <em>Global Report on Osteopathic Practice</em> · Osteopathy Europe (EFO/FORE), October 2023 report · WHO, <em>Benchmarks for training in osteopathy</em>, 2010 · CEN EN 16686:2015 · national texts and regulators' websites. Practitioner numbers are orders of magnitude, from heterogeneous sources and years.</span>
+      </div>
+    </div>
+
     <div class="sect">
       <div class="kick L L-fr">Vérifier ses acquis</div><h2 class="L L-fr">Ce que vous avez retenu</h2>
       <div class="kick L L-en">Check your knowledge</div><h2 class="L L-en">What you have taken in</h2>
@@ -2822,6 +2902,7 @@ body[data-lang="en"] .L-fr{display:none !important}
         <li>SFDO, « Histoire de l'ostéopathie » et « Cadre réglementaire », Légifrance pour la loi 2002-303 art. 75, les décrets 2007-435 et 2007-437, 2014-1043 et 2014-1505, les arrêtés du 12 décembre 2014 et le décret 2025-899.</li>
         <li>Rapport IGAS 2022 sur l'agrément des écoles d'ostéopathie et de chiropraxie.</li>
         <li>osteopathes.pro pour la démographie, Osteopathy Europe pour l'état des régulations, loi italienne 3/2018 puis DPCM 2026.</li>
+        <li>Osteopathic International Alliance, <em>Global Report on Osteopathic Practice</em> ; Osteopathy Europe, rapport d'octobre 2023 ; OMS, <em>Benchmarks for training in osteopathy</em>, 2010 ; norme CEN EN 16686:2015 ; sites des régulateurs nationaux, GOsC, AHPRA, Osteopathic Council of New Zealand, Styrelsen for Patientsikkerhed, Valvira, ACSS, AHPCSA, COFFITO.</li>
         <li>Sutherland W.G., <em>The Cranial Bowl</em>, 1939, et Stark J., <em>Journeyman</em>, 2021, Jones L. 1964, Fryette 1954, Van Buskirk 1996.</li>
       </ul>
     </div></details>
@@ -3409,9 +3490,9 @@ body[data-lang="en"] .L-fr{display:none !important}
 
     <div class="sect">
       <div class="kick L L-fr">Récapitulation</div><h2 class="L L-fr">Le grand quiz de synthèse</h2>
-      <p class="L L-fr" style="max-width:76ch">Vingt questions qui balaient les quatre chapitres, de la médecine héroïque du XIXᵉ siècle aux modèles ostéopathiques de 2026. Une manière de mesurer ce qui est resté après la lecture complète du site.</p>
+      <p class="L L-fr" style="max-width:76ch">Vingt questions qui balaient les quatre premiers chapitres, de la médecine héroïque du XIXᵉ siècle aux modèles ostéopathiques de 2026. Une manière de mesurer ce qui est resté après la lecture complète du site.</p>
       <div class="kick L L-en">Recapitulation</div><h2 class="L L-en">The big synthesis quiz</h2>
-      <p class="L L-en" style="max-width:76ch">Twenty questions spanning all four chapters, from the heroic medicine of the nineteenth century to the osteopathic models of 2026. A way of measuring what has stayed with you after reading the whole site.</p>
+      <p class="L L-en" style="max-width:76ch">Twenty questions spanning all first four chapters, from the heroic medicine of the nineteenth century to the osteopathic models of 2026. A way of measuring what has stayed with you after reading the whole site.</p>
       <div class="quiz" data-quiz="c5"></div>
       <div class="chrono" data-chrono="c5"></div>
       <div class="reflex" data-reflex="c5"></div>
@@ -3435,8 +3516,647 @@ body[data-lang="en"] .L-fr{display:none !important}
     <div class="pagerlinks">
       <a class="btn ghost L L-fr" style="color:var(--navy);border-color:var(--navy)" href="#ch3" onclick="go('ch3')">← Chapitre 3</a>
       <a class="btn ghost L L-en" style="color:var(--navy);border-color:var(--navy)" href="#ch3" onclick="go('ch3')">← Chapter 3</a>
+      <a class="btn navyb L L-fr" href="#ch5" onclick="go('ch5')">Chapitre 5, en France →</a>
+      <a class="btn navyb L L-en" href="#ch5" onclick="go('ch5')">Chapter 5, France →</a>
+    </div>
+  </div>
+</section>
+<!-- ==================== MODULE 5 ==================== -->
+<section class="page" id="page-ch5">
+  <div class="hero"><div class="wrap L L-fr" style="padding-top:56px;padding-bottom:54px">
+  <div class="kicker">Chapitre 5 · En France</div>
+  <h1 style="font-size:clamp(30px,4.5vw,46px)">Une profession née<br>dans l'<em>illégalité</em> (1913-2026)</h1>
+  <p class="lead">Cent treize ans pour passer d'un manuel oublié à un titre protégé. Entre les deux, deux camps qui ne se parlent pas, un arrêté ministériel qu'on a pris pour un décret, une école exilée à Londres, des milliers de praticiens poursuivis, et une reconnaissance légale que personne n'avait vraiment préparée.</p>
+  <div class="stillquote"><p>« Le titre d'ostéopathe est réservé aux personnes titulaires d'un diplôme sanctionnant une formation spécifique. »</p><cite>Loi n° 2002-303 du 4 mars 2002, article 75</cite></div>
+</div>
+<div class="wrap L L-en" style="padding-top:56px;padding-bottom:54px">
+  <div class="kicker">Chapter 5 · France</div>
+  <h1 style="font-size:clamp(30px,4.5vw,46px)">A profession born<br><em>outside the law</em> (1913-2026)</h1>
+  <p class="lead">One hundred and thirteen years to go from a forgotten manual to a protected title. In between, two camps that never spoke to each other, a ministerial order mistaken for a decree, a school exiled to London, thousands of practitioners prosecuted, and a legal recognition nobody had really prepared.</p>
+  <div class="stillquote"><p>"The title of osteopath is reserved for holders of a diploma certifying specific training."</p><cite>Act no. 2002-303 of 4 March 2002, article 75</cite></div>
+</div></div>
+
+<div class="wrap">
+    <div class="podcast" data-pod="ch5"></div>
+
+<div class="sect L L-fr" style="padding-bottom:8px">
+  <div class="kick">Sommaire du chapitre</div>
+  <div class="chapnav">
+    <a href="#" onclick="jumpTo('fr-1');return false">Le terrain français</a>
+    <a href="#" onclick="jumpTo('fr-2');return false">1913, les premières traces</a>
+    <a href="#" onclick="jumpTo('fr-3');return false">Lavezzari, l'ostéopathie des médecins</a>
+    <a href="#" onclick="jumpTo('fr-4');return false">Maigne et la médecine manuelle</a>
+    <a href="#" onclick="jumpTo('fr-5');return false">Gény et l'École française</a>
+    <a href="#" onclick="jumpTo('fr-6');return false">1962, l'arrêté</a>
+    <a href="#" onclick="jumpTo('fr-7');return false">Contourner, résister</a>
+    <a href="#" onclick="jumpTo('fr-8');return false">Les années noires</a>
+    <a href="#" onclick="jumpTo('fr-9');return false">2002-2014, entrer dans la loi</a>
+    <a href="#" onclick="jumpTo('fr-10');return false">Où en est-on ?</a>
+    <a href="#" onclick="jumpTo('fr-11');return false">Les courants conceptuels</a>
+    <a href="#" onclick="jumpTo('fr-12');return false">Frise française</a>
+  </div>
+</div>
+<div class="sect L L-en" style="padding-bottom:8px">
+  <div class="kick">Chapter contents</div>
+  <div class="chapnav">
+    <a href="#" onclick="jumpTo('fr-1');return false">The French ground</a>
+    <a href="#" onclick="jumpTo('fr-2');return false">1913, first traces</a>
+    <a href="#" onclick="jumpTo('fr-3');return false">Lavezzari, osteopathy for doctors</a>
+    <a href="#" onclick="jumpTo('fr-4');return false">Maigne and manual medicine</a>
+    <a href="#" onclick="jumpTo('fr-5');return false">Gény and the French School</a>
+    <a href="#" onclick="jumpTo('fr-6');return false">1962, the order</a>
+    <a href="#" onclick="jumpTo('fr-7');return false">Circumvent, resist</a>
+    <a href="#" onclick="jumpTo('fr-8');return false">The dark years</a>
+    <a href="#" onclick="jumpTo('fr-9');return false">2002-2014, into the law</a>
+    <a href="#" onclick="jumpTo('fr-10');return false">Where do we stand?</a>
+    <a href="#" onclick="jumpTo('fr-11');return false">Conceptual currents</a>
+    <a href="#" onclick="jumpTo('fr-12');return false">French timeline</a>
+  </div>
+</div>
+
+<!-- ============ I ============ -->
+<div class="sect L L-fr" data-anchor="fr-1" id="fr-1">
+  <div class="kick">Partie I</div>
+  <h2>Le terrain français, avant l'arrivée</h2>
+  <div class="prose">
+    <p>L'ostéopathie n'arrive pas en France dans un pays neutre. Elle arrive dans le pays d'Europe où le monopole médical est le mieux gardé. La <strong>loi du 30 novembre 1892</strong> sur l'exercice de la médecine avait déjà tout verrouillé. Quiconque soigne sans diplôme de docteur en médecine commet un délit. Cette matrice juridique précède de soixante-dix ans le texte que les ostéopathes français appellent aujourd'hui « le décret de 1962 », et c'est elle qui a fondé toutes les poursuites.</p>
+    <p>En face, il existe pourtant une pratique manuelle française vivante et ancienne, celle des <strong>rebouteux</strong> et des <strong>renoueurs</strong>. Elle traite fractures, entorses et luxations, elle se transmet dans les familles, elle est tolérée dans les campagnes et poursuivie dès qu'elle devient visible. Elle n'a produit ni école, ni doctrine écrite, ni corps professionnel. C'est une pratique sans texte, et c'est précisément ce qui la distingue de ce que Still avait construit à Kirksville.</p>
+    <p>Le contexte médical, lui, est éclatant. Pasteur, Claude Bernard, Charcot ; la Salpêtrière et l'Hôtel-Dieu ; les facultés de Paris, Montpellier, Strasbourg. La médecine française de 1900 n'a aucune raison de chercher ailleurs. Un système thérapeutique américain fondé sur la main, importé par des non-médecins, y trouvera le terrain le plus hostile d'Europe occidentale.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Méthode · généalogies fabriquées</div>
+    <h4>Hippocrate, Ambroise Paré, et l'ancêtre qu'on se choisit</h4>
+    <p>Beaucoup de sites d'écoles françaises font commencer l'histoire de l'ostéopathie à Hippocrate, à l'Égypte ancienne ou à Ambroise Paré, chirurgien-barbier du XVI<sup>e</sup> siècle qui réduisait luxations et fractures. Le fait est exact ; la filiation ne l'est pas. Personne n'a démontré de continuité historique entre la chirurgie de Paré et le système que Still invente en 1874 dans le Missouri.</p>
+    <p>Se donner un ancêtre prestigieux est un procédé classique de légitimation professionnelle, que l'histoire des sciences connaît bien. Il vaut mieux le nommer que le répéter. L'ostéopathie n'a pas besoin d'Hippocrate. Elle a une date, un lieu et un homme.</p>
+  </div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-1">
+  <div class="kick">Part I</div>
+  <h2>The French ground, before the arrival</h2>
+  <div class="prose">
+    <p>Osteopathy did not arrive in a neutral country. It arrived in the European country where the medical monopoly was most tightly guarded. The <strong>Act of 30 November 1892</strong> on the practice of medicine had already sealed everything. Anyone treating patients without a doctorate in medicine commits an offence. That legal matrix predates by seventy years the text French osteopaths now call "the 1962 decree", and it is the one that actually grounded every prosecution.</p>
+    <p>And yet a living, ancient French manual practice existed, that of the <strong>rebouteux</strong> and <strong>renoueurs</strong>, bonesetters treating fractures, sprains and dislocations, passing their craft down within families, tolerated in the countryside and prosecuted the moment they became visible. It produced no school, no written doctrine, no professional body. A practice without a text, which is exactly what separates it from what Still had built in Kirksville.</p>
+    <p>French medicine, meanwhile, was at its zenith. Pasteur, Claude Bernard, Charcot; the Salpêtrière and the Hôtel-Dieu; the faculties of Paris, Montpellier, Strasbourg. French medicine in 1900 had no reason to look elsewhere. An American therapeutic system founded on the hand, imported by non-physicians, would meet the most hostile ground in Western Europe.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Method · manufactured genealogies</div>
+    <h4>Hippocrates, Ambroise Paré, and the ancestor you choose for yourself</h4>
+    <p>Many French school websites begin the history of osteopathy with Hippocrates, ancient Egypt, or Ambroise Paré, the sixteenth-century barber-surgeon who reduced dislocations and fractures. The fact is accurate; the lineage is not. Nobody has demonstrated historical continuity between Paré's surgery and the system Still invented in Missouri in 1874.</p>
+    <p>Claiming a prestigious ancestor is a classic device of professional legitimation, well known to historians of science. Better to name it than to repeat it. Osteopathy does not need Hippocrates. It has a date, a place and a man.</p>
+  </div>
+</div>
+
+<!-- ============ II ============ -->
+<div class="sect L L-fr" data-anchor="fr-2" id="fr-2">
+  <div class="kick">Partie II</div>
+  <h2>1913, les premières traces</h2>
+  <div class="prose">
+    <p>La première trace française documentée de l'ostéopathie est un livre. En 1913 paraît le <em>Manuel d'ostéopathie pratique, théorie et procédés</em>, signé du <strong>D<sup>r</sup> Lucien Moutin</strong> et de <strong>G.-A. Mann</strong>, composé « d'après les ouvrages d'A. T. Still et de Wilfred L. Riggs ». Le volume est numérisé sur Gallica, on peut le lire aujourd'hui. Sa page de titre indique qu'il est destiné « à l'usage des élèves de l'École d'ostéopathie ».</p>
+    <p>Il y avait donc, à Paris, en 1913, une École d'ostéopathie. Nous ne savons pas laquelle. Ni son adresse, ni ses effectifs, ni sa durée de vie. Aucune source retrouvée ne permet de l'identifier. C'est la première énigme de l'histoire française, et elle reste ouverte.</p>
+    <p>La même année, à Montpellier, un étudiant en médecine soutient sa thèse le 4 juillet. Elle s'intitule <em>Que faut-il entendre par hystérie&nbsp;?</em> et ne parle pas d'ostéopathie. Il s'appelle <strong>Robert Lavezzari</strong>. Il sera, cinq ans plus tard, le premier médecin français à manipuler selon Still.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://gallica.bnf.fr/ark:/12148/bpt6k5609485q.texteImage" target="_blank" rel="noopener">Moutin &amp; Mann, <em>Manuel d'ostéopathie pratique</em>, 1913 (Gallica/BnF)</a> · <a href="https://wellcomecollection.org/works/hfazba28" target="_blank" rel="noopener">Thèse de Robert Lavezzari, Montpellier, 4 juillet 1913 (Wellcome Collection)</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-2">
+  <div class="kick">Part II</div>
+  <h2>1913, the first traces</h2>
+  <div class="prose">
+    <p>The first documented French trace of osteopathy is a book. In 1913 the <em>Manuel d'ostéopathie pratique, théorie et procédés</em> appeared, signed by <strong>Dr Lucien Moutin</strong> and <strong>G.-A. Mann</strong>, compiled "after the works of A. T. Still and Wilfred L. Riggs". The volume is digitised on Gallica and can be read today. Its title page states that it is "for the use of the students of the School of Osteopathy".</p>
+    <p>So there was, in Paris, in 1913, a School of Osteopathy. We do not know which one. Not its address, not its numbers, not how long it lasted. No source found allows it to be identified. It is the first riddle of the French story, and it remains open.</p>
+    <p>That same year, in Montpellier, a medical student defended his thesis on 4 July. It was titled <em>What should be understood by hysteria?</em> and says nothing about osteopathy. His name was <strong>Robert Lavezzari</strong>. Five years later he would be the first French physician to manipulate according to Still.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://gallica.bnf.fr/ark:/12148/bpt6k5609485q.texteImage" target="_blank" rel="noopener">Moutin &amp; Mann, <em>Manuel d'ostéopathie pratique</em>, 1913 (Gallica/BnF)</a> · <a href="https://wellcomecollection.org/works/hfazba28" target="_blank" rel="noopener">Robert Lavezzari's thesis, Montpellier, 4 July 1913 (Wellcome Collection)</a>.</div>
+</div>
+<!-- ============ III ============ -->
+<div class="sect L L-fr" data-anchor="fr-3" id="fr-3">
+  <div class="kick">Partie III</div>
+  <h2>Robert Lavezzari, l'ostéopathie des médecins</h2>
+  <div class="prose">
+    <p>Robert Lavezzari (1886-1977) revient de la Grande Guerre médecin militaire, marqué par ce que la médecine de tranchée ne savait pas réparer. Le récit professionnel veut qu'il découvre l'ostéopathie chez son dentiste, dans un article de <strong>Florence Gair</strong>, Américaine devenue infirme après une chute de cheval en 1891, guérie par un ostéopathe, entrée à l'American School of Osteopathy en 1907, et fondatrice à Brooklyn d'une clinique gratuite pour enfants paralysés. Lavezzari lui écrit, la rencontre, et commence à manipuler à Nice.</p>
+    <p>La suite est plus solide. En <strong>1932</strong>, il enseigne l'ostéopathie au <strong>Dispensaire Hahnemann</strong> à Paris, une structure homéopathique. L'ostéopathie entre en France par la porte des médecines non conventionnelles, pas par la faculté. En <strong>1949</strong>, il publie le premier ouvrage français sur le sujet, <em>L'ostéopathie, une nouvelle méthode clinique et thérapeutique</em>. Puis il fonde la <strong>Société Française d'Ostéopathie</strong>, qu'il présidera jusqu'à sa mort.</p>
+    <p>Sa position est nette et elle va peser un demi-siècle. L'ostéopathie est un <strong>acte médical</strong>. Un complément à la médecine, réservé aux médecins, intégré au monopole plutôt qu'opposé à lui. Là où Still avait construit une profession contre la médecine de son temps, Lavezzari construit une technique <em>dans</em> la médecine de son temps. Tout le conflit français est déjà là.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Point de vigilance · 1951 ou 1952 ?</div>
+    <h4>Une société savante qui ne s'accorde pas sur sa propre date de naissance</h4>
+    <p>Osteopedia UK date la fondation de la Société Française d'Ostéopathie de <strong>1951</strong>. Le site de la SFO elle-même la date de <strong>1952</strong>, avec Pascal Piedalu, Jean Thierry-Mieg et Roger Lescure, et une conférence fondatrice le 7 novembre. Un an d'écart, sur une organisation toujours vivante, qui parle de son propre passé.</p>
+    <p>Ce genre d'écart n'est pas anecdotique. Il indique qu'on est déjà sorti de l'archive et entré dans la mémoire. Trancher supposerait de retrouver la déclaration de l'association au <em>Journal officiel</em> de l'époque. Tant que ce n'est pas fait, la bonne formulation est « 1951 ou 1952 selon les sources », pas un choix arbitraire.</p>
+  </div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-3">
+  <div class="kick">Part III</div>
+  <h2>Robert Lavezzari, osteopathy for physicians</h2>
+  <div class="prose">
+    <p>Robert Lavezzari (1886-1977) came home from the Great War an army doctor, marked by what trench medicine could not repair. The professional account has him discovering osteopathy at his dentist's, in an article by <strong>Florence Gair</strong>, an American left disabled by a riding fall in 1891, healed by an osteopath, enrolled at the American School of Osteopathy in 1907, and founder in Brooklyn of a free clinic for paralysed children. Lavezzari wrote to her, met her, and began manipulating in Nice.</p>
+    <p>What follows is firmer. In <strong>1932</strong> he taught osteopathy at the <strong>Dispensaire Hahnemann</strong> in Paris, a homeopathic institution. Osteopathy entered France through the door of unconventional medicine, not through the faculty. In <strong>1949</strong> he published the first French book on the subject, <em>L'ostéopathie, une nouvelle méthode clinique et thérapeutique</em>. Then he founded the <strong>Société Française d'Ostéopathie</strong>, which he chaired until his death.</p>
+    <p>His position was unambiguous, and it would weigh on half a century. Osteopathy is a <strong>medical act</strong>. A complement to medicine, reserved for physicians, folded into the monopoly rather than set against it. Where Still had built a profession against the medicine of his time, Lavezzari built a technique <em>inside</em> the medicine of his. The whole French conflict is already there.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Caution · 1951 or 1952?</div>
+    <h4>A learned society that cannot agree on its own birth date</h4>
+    <p>Osteopedia UK dates the founding of the Société Française d'Ostéopathie to <strong>1951</strong>. The SFO's own website dates it to <strong>1952</strong>, with Pascal Piedalu, Jean Thierry-Mieg and Roger Lescure, and a founding lecture on 7 November. One year apart, for a living organisation, speaking about its own past.</p>
+    <p>Such a gap is not trivial. It signals that we have already left the archive and entered memory. Settling it would require finding the association's declaration in the <em>Journal officiel</em> of the day. Until then, the correct wording is "1951 or 1952 depending on the source", not an arbitrary choice.</p>
+  </div>
+</div>
+
+<!-- ============ IV ============ -->
+<div class="sect L L-fr" data-anchor="fr-4" id="fr-4">
+  <div class="kick">Partie IV</div>
+  <h2>Robert Maigne, ou la médecine manuelle contre l'ostéopathie</h2>
+  <div class="prose">
+    <p><strong>Robert Maigne</strong> (1923-2012), rhumatologue, part à Londres dans les années 1950 s'inscrire à la British School of Osteopathy. Il y étudie un an, notamment auprès de l'Américain Myron Beal. Il revient avec les techniques, et sans la philosophie.</p>
+    <p>Ce qu'il fait ensuite est décisif. Il introduit les manipulations vertébrales <strong>dans le cursus des facultés de médecine françaises</strong>, première légitimation académique du geste manuel en France. Il forge un concept clinique original, le <strong>dérangement intervertébral mineur</strong> (DIM), et son expression clinique, le syndrome cellulo-téno-myalgique. Il fonde en 1959 la <strong>SOFMMOM</strong>, société savante réservée aux médecins, et cofonde en 1968 la <strong>Fédération internationale de médecine manuelle</strong>.</p>
+    <p>Mais il rejette explicitement le socle stillien, le vitalisme, la règle de l'artère et les techniques fonctionnelles indirectes. Pour lui la manipulation est une technique de rééducation, une branche de la médecine, et un <strong>acte médical exclusif</strong>. Il combat les praticiens non-médecins avec constance et efficacité.</p>
+    <p>Le résultat est une bifurcation durable. D'un côté la <em>médecine manuelle</em>, universitaire, médicale, respectable. De l'autre l'<em>ostéopathie</em>, associative, non-médicale, illégale. Deux mots pour des gestes voisins, et une frontière sociale entre eux.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.smmof.fr/blog/la-medecine-manuelle-osteopathique" target="_blank" rel="noopener">SMMOF, La médecine manuelle ostéopathique</a> · <a href="https://www.academie-medecine.fr/le-dictionnaire/index.php?q=m%C3%A9decine+manuelle+de+Robert+Maigne" target="_blank" rel="noopener">Académie nationale de médecine, dictionnaire, « médecine manuelle de Robert Maigne »</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-4">
+  <div class="kick">Part IV</div>
+  <h2>Robert Maigne, or manual medicine against osteopathy</h2>
+  <div class="prose">
+    <p><strong>Robert Maigne</strong> (1923-2012), a rheumatologist, went to London in the 1950s to enrol at the British School of Osteopathy. He studied there for a year, notably under the American Myron Beal. He came back with the techniques, and without the philosophy.</p>
+    <p>What he did next was decisive. He introduced spinal manipulation <strong>into the curriculum of French medical faculties</strong>, the first academic legitimation of the manual act in France. He forged an original clinical concept, the <strong>minor intervertebral derangement</strong> (DIM), and its clinical expression, the cellulo-teno-myalgic syndrome. In 1959 he founded the <strong>SOFMMOM</strong>, a learned society restricted to physicians, and in 1968 co-founded the <strong>International Federation for Manual Medicine</strong>.</p>
+    <p>But he explicitly rejected the Stillian foundation, vitalism, the rule of the artery and indirect functional techniques. For him manipulation was a rehabilitation technique, a branch of medicine, and an <strong>exclusively medical act</strong>. He fought non-physician practitioners consistently and effectively.</p>
+    <p>The result was a lasting fork. On one side <em>manual medicine</em>, academic, medical, respectable. On the other <em>osteopathy</em>, associative, non-medical, illegal. Two words for neighbouring gestures, and a social border between them.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.smmof.fr/blog/la-medecine-manuelle-osteopathique" target="_blank" rel="noopener">SMMOF, Osteopathic manual medicine</a> · <a href="https://www.academie-medecine.fr/le-dictionnaire/index.php?q=m%C3%A9decine+manuelle+de+Robert+Maigne" target="_blank" rel="noopener">French National Academy of Medicine, dictionary entry</a>.</div>
+</div>
+
+<!-- ============ V ============ -->
+<div class="sect L L-fr" data-anchor="fr-5" id="fr-5">
+  <div class="kick">Partie V</div>
+  <h2>Paul Gény et l'École française d'ostéopathie</h2>
+  <div class="prose">
+    <p>Pendant que les médecins s'organisent, un masseur-kinésithérapeute fait le chemin inverse. <strong>Paul Gény</strong> (1912-1996) découvre l'ostéopathie auprès de <strong>Tom Dummer</strong>, ostéopathe anglais diplômé du British College of Naturopathy and Osteopathy. Avec son confrère <strong>Jacques Potter</strong>, il crée une société de recherche ostéopathique et organise, dès 1951, des séminaires intensifs pour non-médecins.</p>
+    <p>De ces séminaires naît l'<strong>École française d'ostéopathie</strong> (EFO), première école d'ostéopathie de France. Le format est adapté à des professionnels en exercice, sept séminaires du vendredi au lundi, de novembre à mai. Les enseignants viennent d'Angleterre. <strong>John Wernham</strong>, élève direct de Littlejohn, <strong>Parnell Bradbury</strong>, <strong>Denis Brookes</strong>, <strong>Tom Dummer</strong>. C'est le modèle britannique qui s'installe en France, la manipulation seule, sans médicament ni chirurgie, comme profession autonome.</p>
+    <p>Le public est celui que Lavezzari et Maigne n'ont pas voulu, des kinésithérapeutes, des masseurs, des praticiens de santé sans doctorat. Le clivage français est désormais complet, et il est social autant que doctrinal.</p>
+    <p>Le <strong>30 novembre 1964</strong>, Denis Brookes organise à Paris le premier séminaire français d'ostéopathie crânienne, avec trois élèves directs de Sutherland, <strong>Harold Magoun</strong>, <strong>Viola Frymann</strong> et <strong>Thomas Schooley</strong>. Trois Français formés chez Gény y participent, <strong>René Quéguiner</strong>, <strong>Francis Peyralade</strong> (1928-2013) et <strong>Bernard Barillon</strong>, et réussissent l'épreuve de palpation sans être médecins. Quéguiner et Peyralade fonderont la SERETO en 1978. L'ostéopathie crânienne entre en France par cette porte-là.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Point de vigilance · une école sans date de naissance</div>
+    <h4>1950, 1956 ou 1965 ? Le cas d'école du télescopage chronologique</h4>
+    <p>Trois dates circulent pour la fondation de l'EFO. Osteopedia UK dit <strong>1956</strong> (Gény et Potter). Le site osteopathie.mc dit <strong>1950</strong> (Gény seul). L'Institut Dauphine écrit que « Paul Gény et Thomas G. Dummer créent l'École française d'ostéopathie » en <strong>1965</strong>, date qui correspond au <em>transfert</em> de l'école à Londres, pas à sa création, et qui fait entrer Dummer dans une fondation à laquelle il n'a pas participé.</p>
+    <p>Un même événement raconté trois fois, avec trois dates et deux distributions de rôles différentes. C'est le meilleur exemple français de ce que produit une histoire écrite par les institutions qui en descendent. Les étapes se replient les unes sur les autres, et le fondateur le plus connu absorbe les autres.</p>
+  </div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-5">
+  <div class="kick">Part V</div>
+  <h2>Paul Gény and the French School of Osteopathy</h2>
+  <div class="prose">
+    <p>While the doctors organised, a physiotherapist took the opposite road. <strong>Paul Gény</strong> (1912-1996) discovered osteopathy through <strong>Tom Dummer</strong>, an English osteopath trained at the British College of Naturopathy and Osteopathy. With his colleague <strong>Jacques Potter</strong> he set up an osteopathic research society and, from 1951, ran intensive seminars for non-physicians.</p>
+    <p>Out of those seminars grew the <strong>École française d'ostéopathie</strong> (EFO), the first osteopathic school in France. The format suited working professionals, seven seminars from Friday to Monday, November to May. The teachers came from England. <strong>John Wernham</strong>, a direct pupil of Littlejohn, <strong>Parnell Bradbury</strong>, <strong>Denis Brookes</strong>, <strong>Tom Dummer</strong>. It was the British model that took root in France, manipulation alone, without drugs or surgery, as an autonomous profession.</p>
+    <p>Its intake was precisely the one Lavezzari and Maigne had refused, physiotherapists, masseurs, health practitioners without a doctorate. The French divide was now complete, and it was as much social as doctrinal.</p>
+    <p>On <strong>30 November 1964</strong>, Denis Brookes organised the first French seminar in cranial osteopathy in Paris, with three direct pupils of Sutherland, <strong>Harold Magoun</strong>, <strong>Viola Frymann</strong> and <strong>Thomas Schooley</strong>. Three Frenchmen trained by Gény took part, <strong>René Quéguiner</strong>, <strong>Francis Peyralade</strong> (1928-2013) and <strong>Bernard Barillon</strong>, and passed the palpation test without being physicians. Quéguiner and Peyralade would found SERETO in 1978. Cranial osteopathy entered France through that door.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Caution · a school with no birth date</div>
+    <h4>1950, 1956 or 1965? A textbook case of chronological collapse</h4>
+    <p>Three dates circulate for the founding of the EFO. Osteopedia UK says <strong>1956</strong> (Gény and Potter). The site osteopathie.mc says <strong>1950</strong> (Gény alone). Institut Dauphine writes that "Paul Gény and Thomas G. Dummer created the École française d'ostéopathie" in <strong>1965</strong>, a date that corresponds to the school's <em>transfer</em> to London, not its creation, and which writes Dummer into a founding he took no part in.</p>
+    <p>One event told three times, with three dates and two different casts. It is the best French example of what happens when history is written by the institutions descended from it. The stages fold into one another, and the best-known founder absorbs the rest.</p>
+  </div>
+</div>
+<!-- ============ VI ============ -->
+<div class="sect L L-fr" data-anchor="fr-6" id="fr-6">
+  <div class="kick">Partie VI</div>
+  <h2>1962, ce que le texte dit vraiment</h2>
+  <div class="prose">
+    <p>Toute la profession française raconte la même chose : « en 1962, un décret a interdit l'ostéopathie aux non-médecins ». C'est la date fondatrice du récit collectif, celle qui ouvre quarante ans de combat. Nous avons cherché ce décret. Il n'existe pas.</p>
+    <p>Ce qui existe, c'est l'<strong>arrêté du 6 janvier 1962</strong> fixant la liste des actes médicaux ne pouvant être pratiqués que par des médecins. Un arrêté, pas un décret. Une liste générale d'actes, pas un texte visant l'ostéopathie, et le mot n'y figure pas. Parmi ces actes, « toute mobilisation forcée des articulations ». C'est cette ligne, dans une liste administrative, qui a rendu chaque manipulation par un non-médecin constitutive du délit d'exercice illégal de la médecine.</p>
+    <p>La nuance n'est pas juridique, elle est historique. Elle change la nature de ce qui s'est passé. Il n'y a pas eu de décision politique visant à écraser l'ostéopathie en 1962. Il y a eu la mise à jour d'une liste d'actes réservés, dans un pays où le monopole médical existait déjà depuis 1892, et un mouvement professionnel naissant en a fait les frais. L'arrêté du 6 janvier 1962 est d'ailleurs <strong>toujours en vigueur</strong>, modifié pour la dernière fois en mai 2024.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Correction historiographique</div>
+    <h4>Le « décret de 1962 » n'a jamais existé</h4>
+    <p>Il s'agit d'un <strong>arrêté</strong> et non d'un décret, daté du <strong>6 janvier 1962</strong>, qui fixe la liste des actes médicaux réservés aux médecins ou pouvant être également pratiqués par des auxiliaires médicaux. L'ostéopathie n'y est pas nommée. Le fondement réel des poursuites reste la loi du 30 novembre 1892 sur l'exercice de la médecine, codifiée aujourd'hui aux articles L. 4161-1 et suivants du code de la santé publique.</p>
+    <p>Formulation juste pour un cours : « à partir de 1962, la mobilisation forcée des articulations figure sur la liste des actes réservés aux médecins, ce qui expose tout praticien non-médecin à une poursuite pour exercice illégal de la médecine ». C'est moins dramatique, et c'est ce qui s'est produit.</p>
+    <p class="mini"><a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000802880" target="_blank" rel="noopener">Texte intégral sur Légifrance</a></p>
+  </div>
+  <div class="prose">
+    <p>L'effet est immédiat pour l'EFO. Ses enseignants sont britanniques, ses élèves ne sont pas médecins, son objet est illégal. En <strong>1965</strong>, Gény prend une décision inhabituelle dans l'histoire des professions. Il déplace l'école. Avec le soutien de Tom Dummer et de <strong>Margery Bloomfield</strong>, l'EFO est accueillie à Londres, au <strong>British College of Naturopathy and Osteopathy</strong>. Seize élèves français traversent la Manche pour terminer leur formation.</p>
+    <p>L'école ne reviendra jamais. En <strong>1971</strong> elle s'installe à <strong>Maidstone</strong>, dans le Kent, sous la direction de Dummer, et s'ouvre à toute l'Europe. En <strong>1974</strong>, elle prend son nom définitif d'<strong>European School of Osteopathy</strong>. Elle existe toujours.</p>
+    <p>Le paradoxe mérite d'être posé aux étudiants. Un texte destiné à protéger le monopole médical français a produit la principale école d'ostéopathie d'Europe, qui a ensuite formé les ostéopathes français, belges, suisses, italiens et espagnols qui allaient obtenir la reconnaissance dans leurs pays respectifs. La répression a exporté l'objet qu'elle voulait supprimer.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000802880" target="_blank" rel="noopener">Arrêté du 6 janvier 1962, Légifrance</a> · <a href="https://www.eso.ac.uk/about-us/the-bcno-group/eso-history/" target="_blank" rel="noopener">European School of Osteopathy, The History of ESO</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-6">
+  <div class="kick">Part VI</div>
+  <h2>1962, what the text actually says</h2>
+  <div class="prose">
+    <p>The whole French profession tells the same story: "in 1962 a decree banned osteopathy for non-physicians". It is the founding date of the collective narrative, the one that opens forty years of struggle. We went looking for that decree. It does not exist.</p>
+    <p>What does exist is the <strong>ministerial order of 6 January 1962</strong> setting out the list of medical acts that may only be performed by physicians. An <em>arrêté</em>, not a <em>décret</em>. A general list of acts, not a text aimed at osteopathy, and the word does not appear in it. Among those acts: "any forced mobilisation of the joints". That single line, in an administrative list, is what made every manipulation by a non-physician an offence of illegal practice of medicine.</p>
+    <p>The distinction is not legal pedantry, it is historical. It changes the nature of what happened. There was no political decision to crush osteopathy in 1962. There was an update to a list of reserved acts, in a country where the medical monopoly had existed since 1892, and a nascent professional movement paid the price. The order of 6 January 1962 is, incidentally, <strong>still in force</strong>, last amended in May 2024.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Historiographical correction</div>
+    <h4>The "1962 decree" never existed</h4>
+    <p>It is a <strong>ministerial order</strong> and not a decree, dated <strong>6 January 1962</strong>, setting out the list of medical acts reserved to physicians or also performable by medical auxiliaries. Osteopathy is not named in it. The real legal basis for prosecutions remains the Act of 30 November 1892 on the practice of medicine, now codified in articles L. 4161-1 et seq. of the Public Health Code.</p>
+    <p>Accurate wording for a course: "from 1962, forced mobilisation of the joints appears on the list of acts reserved to physicians, exposing any non-physician practitioner to prosecution for illegal practice of medicine." Less dramatic, and it is what happened.</p>
+    <p class="mini"><a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000802880" target="_blank" rel="noopener">Full text on Légifrance</a></p>
+  </div>
+  <div class="prose">
+    <p>The effect on the EFO was immediate. Its teachers were British, its students were not physicians, its object was illegal. In <strong>1965</strong> Gény took a decision unusual in the history of professions. He moved the school. With the support of Tom Dummer and <strong>Margery Bloomfield</strong>, the EFO was taken in by the <strong>British College of Naturopathy and Osteopathy</strong> in London. Sixteen French students crossed the Channel to finish their training.</p>
+    <p>The school never came back. In <strong>1971</strong> it moved to <strong>Maidstone</strong>, Kent, under Dummer's direction, and opened to the whole of Europe. In <strong>1974</strong> it took its final name of <strong>European School of Osteopathy</strong>. It still exists.</p>
+    <p>The paradox is worth putting to students. A text meant to protect the French medical monopoly produced Europe's leading school of osteopathy, which then trained the French, Belgian, Swiss, Italian and Spanish osteopaths who would go on to win recognition in their own countries. The repression exported the very thing it meant to suppress.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000802880" target="_blank" rel="noopener">Order of 6 January 1962, Légifrance</a> · <a href="https://www.eso.ac.uk/about-us/the-bcno-group/eso-history/" target="_blank" rel="noopener">European School of Osteopathy, The History of ESO</a>.</div>
+</div>
+
+<!-- ============ VII ============ -->
+<div class="sect L L-fr" data-anchor="fr-7" id="fr-7">
+  <div class="kick">Partie VII</div>
+  <h2>Contourner, s'organiser, résister (1959-1990)</h2>
+  <div class="prose">
+    <h3>Changer de nom pour continuer</h3>
+    <p><strong>Christian Trédaniel</strong> (mort en 2011), ancien parachutiste devenu kinésithérapeute, formé à la chiropraxie aux États-Unis en 1958, crée en <strong>1959</strong> l'Association ostéopathique internationale. En <strong>1963</strong>, il dépose un mot neuf, <strong>étiopathie</strong>, de <em>aitia</em>, la cause, et <em>pathos</em>, la souffrance. Le motif est explicitement politique. Les non-médecins ne peuvent pas enseigner sous le nom d'ostéopathie, donc on change de nom. L'association devient Institut suisse d'étiopathie en 1967, Collège européen d'étiopathie en 1971, et Trédaniel ouvre en <strong>1979</strong> la Faculté libre d'étiopathie de Paris.</p>
+    <p>C'est une stratégie de survie linguistique, et elle a produit une discipline distincte qui existe encore. La paternité du concept est d'ailleurs contestée à l'intérieur même de l'étiopathie, certains lui opposant l'antériorité d'un ouvrage du médecin américain George Dutton, en 1899.</p>
+    <h3>S'organiser</h3>
+    <p>Les diplômés de Maidstone rentrent en France et se regroupent. Le <strong>3 mars 1973</strong> naît l'<strong>Association française de défense de l'ostéopathie</strong> (AFDO), qui deviendra en 1995 le <strong>Syndicat français des ostéopathes</strong> (SFDO). En <strong>1976</strong>, à Montpellier, la Fédération française d'ostéopathie, future Fédération des ostéopathes de France.</p>
+    <p>Le <strong>23 avril 1981</strong>, quatre hommes déposent en préfecture des Bouches-du-Rhône les statuts du <strong>Registre des ostéopathes de France</strong>, avec <strong>Robert Perronneaud-Ferré</strong> président, <strong>Régis Godefroy</strong> (1945-1992) vice-président, <strong>Jean Peyrière</strong> secrétaire, <strong>Jean Josse</strong> (1934-1990) trésorier. Le principe du ROF est un pari, ne plus se cacher derrière le titre de kinésithérapeute, s'appeler publiquement ostéopathe, et tenir un registre volontaire avec des standards de formation. Six semaines plus tard, le <strong>2 juin 1981</strong>, Perronneaud-Ferré est condamné pour exercice illégal de la médecine.</p>
+    <p>En <strong>1987</strong> naît l'Union fédérale des ostéopathes de France, aujourd'hui « Ostéopathes de France ». En <strong>1997</strong>, l'<strong>Académie d'ostéopathie de France</strong>. Entre-temps, une décision fiscale dit tout. Les ostéopathes exclusifs sont assujettis à la TVA, dont sont exemptés les professionnels de santé. La traduction administrative est sans ambiguïté, l'ostéopathie n'est pas un soin. Il faudra attendre un arrêt européen et la loi de finances rectificative de <strong>2007</strong> pour que cela cesse.</p>
+    <h3>Une percée universitaire isolée</h3>
+    <p>En <strong>1982</strong>, le professeur <strong>Pierre Cornillot</strong> ouvre à l'université Paris 13 - Bobigny le DUMENAT, diplôme universitaire de médecines naturelles, qui fait entrer pour la première fois l'ostéopathie dans une université française. C'est une brèche, pas une porte. La formation restera, pour l'essentiel, privée jusqu'à aujourd'hui.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.osteopathie.org/historique.html" target="_blank" rel="noopener">Registre des Ostéopathes de France, Historique</a> · <a href="https://www.osteopathe-syndicat.fr/historique-syndicat-osteopathe" target="_blank" rel="noopener">SFDO, Historique du syndicat</a> · <a href="https://www.osteopathe-syndicat.fr/sfdo-combats-fin-assujettissement" target="_blank" rel="noopener">SFDO, La fin de l'assujettissement à la TVA</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-7">
+  <div class="kick">Part VII</div>
+  <h2>Circumvent, organise, resist (1959-1990)</h2>
+  <div class="prose">
+    <h3>Changing the name to carry on</h3>
+    <p><strong>Christian Trédaniel</strong> (d. 2011), a former paratrooper turned physiotherapist, trained in chiropractic in the United States in 1958, founded the International Osteopathic Association in <strong>1959</strong>. In <strong>1963</strong> he registered a new word, <strong>etiopathy</strong>, from <em>aitia</em>, cause, and <em>pathos</em>, suffering. The motive was explicitly political. Non-physicians could not teach under the name of osteopathy, so the name changed. The association became the Swiss Institute of Etiopathy in 1967, the European College of Etiopathy in 1971, and Trédaniel opened the Free Faculty of Etiopathy in Paris in <strong>1979</strong>.</p>
+    <p>It was a strategy of linguistic survival, and it produced a distinct discipline that still exists. Note that authorship of the concept is contested within etiopathy itself, some pointing to an 1899 book by the American physician George Dutton.</p>
+    <h3>Organising</h3>
+    <p>Maidstone graduates came home to France and banded together. On <strong>3 March 1973</strong> the <strong>Association française de défense de l'ostéopathie</strong> (AFDO) was born, becoming in 1995 the <strong>Syndicat français des ostéopathes</strong> (SFDO). In <strong>1976</strong>, in Montpellier, the French Federation of Osteopathy, future Federation of Osteopaths of France.</p>
+    <p>On <strong>23 April 1981</strong>, four men filed the statutes of the <strong>Registre des ostéopathes de France</strong> with the Bouches-du-Rhône prefecture, with <strong>Robert Perronneaud-Ferré</strong> as president, <strong>Régis Godefroy</strong> (1945-1992) vice-president, <strong>Jean Peyrière</strong> secretary, <strong>Jean Josse</strong> (1934-1990) treasurer. The ROF's principle was a wager, stop hiding behind the physiotherapist's title, call yourself an osteopath publicly, and keep a voluntary register with training standards. Six weeks later, on <strong>2 June 1981</strong>, Perronneaud-Ferré was convicted of illegal practice of medicine.</p>
+    <p>In <strong>1987</strong> came the Union fédérale des ostéopathes de France, today "Ostéopathes de France". In <strong>1997</strong>, the <strong>Académie d'ostéopathie de France</strong>. Meanwhile a tax decision said everything. Exclusive osteopaths were liable for VAT, from which health professionals are exempt. The administrative translation is unambiguous, osteopathy is not care. It would take a European ruling and the amending finance act of <strong>2007</strong> to end it.</p>
+    <h3>One isolated academic breach</h3>
+    <p>In <strong>1982</strong>, Professor <strong>Pierre Cornillot</strong> opened the DUMENAT at Université Paris 13 - Bobigny, a university diploma in natural medicines, bringing osteopathy into a French university for the first time. A breach, not a door. Training would remain overwhelmingly private to this day.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.osteopathie.org/historique.html" target="_blank" rel="noopener">Registre des Ostéopathes de France, Historique</a> · <a href="https://www.osteopathe-syndicat.fr/historique-syndicat-osteopathe" target="_blank" rel="noopener">SFDO, union history</a>.</div>
+</div>
+<!-- ============ VIII ============ -->
+<div class="sect L L-fr" data-anchor="fr-8" id="fr-8">
+  <div class="kick">Partie VIII</div>
+  <h2>Les années noires</h2>
+  <div class="prose">
+    <p>C'est ainsi que la profession nomme la période qui s'ouvre vers <strong>1988</strong>. Les poursuites pour exercice illégal de la médecine s'intensifient. Les récits professionnels décrivent des amendes lourdes, des peines de prison avec sursis, des interdictions d'exercer, et une pratique nouvelle, la <strong>poursuite collective</strong>, où tous les ostéopathes d'une même ville sont convoqués et condamnés ensemble, pour l'exemple.</p>
+    <p>La profession s'organise en conséquence, avec des caisses de solidarité pour payer les amendes, des avocats spécialisés, des pétitions de patients, la mobilisation de la presse. Certains continuent en clandestinité, d'autres se replient sur leur diplôme de kinésithérapeute, d'autres partent exercer en Belgique ou en Suisse.</p>
+    <p>Et pendant ce temps, le nombre de consultations augmente. C'est la contradiction que rien ne peut tenir longtemps. Une pratique illégale, exercée à grande échelle, demandée massivement par le public, et poursuivie de façon nécessairement sélective. En <strong>1999</strong>, le secrétariat d'État à la Santé commande un rapport sur les conditions d'exercice de l'ostéopathie et de la chiropraxie. La reconnaissance devient une question de calendrier.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Une histoire sans archives</div>
+    <h4>Pas un seul procès nommé</h4>
+    <p>Nous avons cherché des affaires. Le ROF, le SFDO et Osteopedia UK évoquent tous ces années dans les mêmes termes, « intensification des poursuites », « condamnations collectives », et aucun ne cite un praticien, une ville, un tribunal, une date de jugement. La seule affaire nommée que nous ayons trouvée est celle de Robert Perronneaud-Ferré, le 2 juin 1981, soit sept ans <em>avant</em> la période dite des années noires.</p>
+    <p>Cela ne signifie pas que ces procès n'ont pas eu lieu. Cela signifie que la profession a gardé le souvenir d'une persécution sans en conserver les pièces. Documenter réellement les années noires demanderait un travail d'archives de presse (1988-1998) et de jurisprudence que personne n'a encore mené. C'est, à ce jour, le trou le plus visible de l'histoire de l'ostéopathie française, et un excellent sujet de mémoire.</p>
+  </div>
+  <div class="prose">
+    <p>Le rapport de 1999 est lui-même un objet incertain. Une réponse ministérielle au Sénat, en 2001, confirme qu'un groupe de travail a rendu en 1999 des conclusions favorables restées sans suite immédiate. La chronologie professionnelle l'attribue à <strong>Guy Nicolas</strong> et l'appelle « rapport Nicolas ». Nous n'avons retrouvé ni le texte, ni son titre exact, ni confirmation primaire du nom de son auteur.</p>
+  </div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-8">
+  <div class="kick">Part VIII</div>
+  <h2>The dark years</h2>
+  <div class="prose">
+    <p>That is what the profession calls the period opening around <strong>1988</strong>. Prosecutions for illegal practice of medicine intensified. Professional accounts describe heavy fines, suspended prison sentences, practice bans, and a new tactic, <strong>collective prosecution</strong>, where every osteopath in a given town was summoned and convicted together, to make an example.</p>
+    <p>The profession organised accordingly, with solidarity funds to pay fines, specialist lawyers, patient petitions and press mobilisation. Some carried on clandestinely, some retreated behind their physiotherapy diploma, some left to practise in Belgium or Switzerland.</p>
+    <p>And all the while, consultations kept rising. This is the contradiction nothing can hold for long. An illegal practice, performed at scale, massively demanded by the public, and necessarily prosecuted selectively. In <strong>1999</strong> the Secretariat of State for Health commissioned a report on the conditions of practice of osteopathy and chiropractic. Recognition became a matter of timing.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">A history without archives</div>
+    <h4>Not one named trial</h4>
+    <p>We looked for cases. The ROF, the SFDO and Osteopedia UK all describe those years in the same terms, "intensified prosecutions", "collective convictions", and none names a practitioner, a town, a court, or a judgment date. The only named case we found is Robert Perronneaud-Ferré, 2 June 1981, seven years <em>before</em> the so-called dark years.</p>
+    <p>This does not mean the trials did not happen. It means the profession kept the memory of a persecution without keeping its records. Really documenting the dark years would require press-archive work (1988-1998) and case-law research that nobody has yet done. It is, to date, the most visible hole in the history of French osteopathy, and an excellent dissertation topic.</p>
+  </div>
+  <div class="prose">
+    <p>The 1999 report is itself an uncertain object. A ministerial answer in the Senate in 2001 confirms that a working group delivered favourable conclusions in 1999, with no immediate legislative sequel. Professional chronologies attribute it to <strong>Guy Nicolas</strong> and call it the "Nicolas report". We found neither the text, nor its exact title, nor primary confirmation of its author's name.</p>
+  </div>
+</div>
+
+<!-- ============ IX ============ -->
+<div class="sect L L-fr" data-anchor="fr-9" id="fr-9">
+  <div class="kick">Partie IX</div>
+  <h2>2002-2014, entrer dans la loi</h2>
+  <div class="prose">
+    <p>Le <strong>4 mars 2002</strong>, la loi n° 2002-303 relative aux droits des malades, dite loi Kouchner, est promulguée. Son <strong>article 75</strong> tient en quelques lignes et met fin à quarante ans de clandestinité. L'usage professionnel du titre d'ostéopathe est réservé aux titulaires d'un diplôme sanctionnant une formation spécifique délivrée par un établissement agréé par le ministre de la Santé, et la formation continue devient obligatoire.</p>
+    <p>Ce que la loi ne dit pas est aussi important que ce qu'elle dit. Elle ne définit ni la durée de la formation, ni son contenu, ni le champ d'exercice, ni les actes autorisés ou interdits. Elle protège un titre sans décrire un métier. Cinq années d'incertitude s'ouvrent.</p>
+    <p>Le <strong>6 août 2002</strong>, la loi n° 2002-1062 portant amnistie efface un ensemble d'infractions liées à l'exercice professionnel. Les organisations d'ostéopathes en font le pendant symbolique de l'article 75, et lisent l'effacement des condamnations des années noires. Le texte de l'article 10 ne nomme pourtant pas l'ostéopathie ; il s'agit d'une amnistie générale dont l'application aux ostéopathes est rapportée par les sources professionnelles.</p>
+    <h3>Les décrets de 2007</h3>
+    <p>Le <strong>25 mars 2007</strong>, deux décrets paraissent le même jour. Le <strong>décret n° 2007-435</strong> définit les actes et conditions d'exercice. Il autorise les manipulations et mobilisations, en exclut les actes invasifs et la prescription, et pose des restrictions sur les manipulations cervicales à haute vélocité et sur les nourrissons. Le <strong>décret n° 2007-437</strong> fixe la formation à 2 660 heures minimum et organise l'agrément des écoles. Un troisième décret, le 2 novembre 2007, ajuste le dispositif.</p>
+    <p>La réaction de la profession est mitigée. Le cadre existe enfin, mais il a été écrit en grande partie depuis le point de vue des préoccupations médicales. Ce sont les restrictions qui sont détaillées, plus que les compétences.</p>
+    <h3>La réforme de 2014</h3>
+    <p>La formation à 2 660 heures et l'agrément quasi automatique ont produit ce qu'on pouvait prévoir, une multiplication des écoles et une hétérogénéité de qualité devenue impossible à défendre. Deux textes corrigent le tir.</p>
+    <p>Le <strong>décret n° 2014-1043 du 12 septembre 2014</strong> refond l'agrément des établissements. Le <strong>décret n° 2014-1505 du 12 décembre 2014</strong>, complété par deux arrêtés du même jour, porte la formation à <strong>cinq ans</strong>, soit 3 360 heures d'enseignement théorique et pratique et 1 500 heures de formation clinique dont 150 consultations complètes validées, au total <strong>4 860 heures</strong>, organisées en sept domaines de compétence. C'est le référentiel encore en vigueur.</p>
+    <p>L'effet est brutal et voulu. Le <strong>1<sup>er</sup> septembre 2021</strong>, à l'issue d'une évaluation, neuf écoles sur trente-et-une perdent leur agrément, huit autres voient leurs capacités réduites ou sont placées sous surveillance.</p>
+    <p>En marge, le <strong>19 avril 2017</strong>, deux décrets encadrent pour la première fois l'<strong>ostéopathie animale</strong>, avec une liste tenue par l'Ordre des vétérinaires.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Correction · deux décrets, deux dates</div>
+    <h4>12 septembre, pas 12 décembre</h4>
+    <p>On lit très souvent que « les deux décrets de 2014 sont du 12 décembre ». C'est inexact. Le décret sur l'<strong>agrément des écoles</strong> (2014-1043) est du <strong>12 septembre 2014</strong> ; celui sur la <strong>formation</strong> (2014-1505) est du <strong>12 décembre 2014</strong>. Même quantième, trois mois d'écart. La confusion est compréhensible et facile à éviter.</p>
+  </div>
+  <div class="srcnote"><b>Textes.</b> <a href="https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000031549014" target="_blank" rel="noopener">Loi 2002-303, art. 75</a> · <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000462001" target="_blank" rel="noopener">Décret 2007-435</a> · <a href="https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000644998/" target="_blank" rel="noopener">Décret 2007-437</a> · <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029449275/" target="_blank" rel="noopener">Décret 2014-1043</a> · <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029894161" target="_blank" rel="noopener">Décret 2014-1505</a> · <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000029894219" target="_blank" rel="noopener">Arrêté du 12 décembre 2014</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-9">
+  <div class="kick">Part IX</div>
+  <h2>2002-2014, into the law</h2>
+  <div class="prose">
+    <p>On <strong>4 March 2002</strong>, Act no. 2002-303 on patients' rights, known as the Kouchner Act, was promulgated. Its <strong>article 75</strong> runs to a few lines and ended forty years of clandestinity. Professional use of the title of osteopath is reserved for holders of a diploma certifying specific training delivered by an establishment approved by the Minister of Health, and continuing education becomes compulsory.</p>
+    <p>What the Act does not say matters as much as what it does. It defines neither the length of training, nor its content, nor the scope of practice, nor permitted or forbidden acts. It protects a title without describing a job. Five years of uncertainty followed.</p>
+    <p>On <strong>6 August 2002</strong>, amnesty Act no. 2002-1062 wiped out a set of offences linked to professional practice. Osteopathic organisations read it as the symbolic counterpart of article 75, erasing the convictions of the dark years. The text of article 10 does not name osteopathy, however; it is a general amnesty whose application to osteopaths is reported by professional sources.</p>
+    <h3>The 2007 decrees</h3>
+    <p>On <strong>25 March 2007</strong> two decrees appeared on the same day. <strong>Decree no. 2007-435</strong> defines acts and conditions of practice. It authorises manipulation and mobilisation, excludes invasive acts and prescription, and imposes restrictions on high-velocity cervical manipulation and on infants. <strong>Decree no. 2007-437</strong> set training at a minimum of 2,660 hours and organised the approval of schools. A third decree, on 2 November 2007, adjusted the arrangement.</p>
+    <p>The profession's reaction was mixed. The framework finally existed, but it had largely been written from the standpoint of medical concerns. The restrictions are detailed, the competencies less so.</p>
+    <h3>The 2014 reform</h3>
+    <p>Training at 2,660 hours and near-automatic approval produced what one might expect, a proliferation of schools and a spread of quality that became impossible to defend. Two texts corrected course.</p>
+    <p><strong>Decree no. 2014-1043 of 12 September 2014</strong> overhauled the approval of establishments. <strong>Decree no. 2014-1505 of 12 December 2014</strong>, completed by two orders of the same day, raised training to <strong>five years</strong>, that is 3,360 hours of theoretical and practical teaching and 1,500 hours of clinical training including 150 validated full consultations, <strong>4,860 hours</strong> in all, organised in seven competency domains. That is the framework still in force.</p>
+    <p>The effect was blunt and intended. On <strong>1 September 2021</strong>, following an evaluation, nine schools out of thirty-one lost their approval and eight more had their capacity reduced or were placed under supervision.</p>
+    <p>Alongside this, on <strong>19 April 2017</strong>, two decrees regulated <strong>animal osteopathy</strong> for the first time, with a list kept by the veterinary board.</p>
+  </div>
+  <div class="histbox">
+    <div class="tag">Correction · two decrees, two dates</div>
+    <h4>12 September, not 12 December</h4>
+    <p>One very often reads that "both 2014 decrees are dated 12 December". Not so. The decree on <strong>school approval</strong> (2014-1043) is dated <strong>12 September 2014</strong>; the one on <strong>training</strong> (2014-1505) is dated <strong>12 December 2014</strong>. Same day of the month, three months apart. The confusion is understandable and easy to avoid.</p>
+  </div>
+</div>
+<!-- ============ X ============ -->
+<div class="sect L L-fr" data-anchor="fr-10" id="fr-10">
+  <div class="kick">Partie X</div>
+  <h2>Où en est-on ? (2015-2026)</h2>
+  <div class="prose">
+    <p>Le <strong>16 octobre 2024</strong>, les ostéopathes quittent le répertoire ADELI pour le <strong>RPPS</strong>, le Répertoire partagé des professionnels de santé. C'est un acte administratif, mais son symbolisme est réel. Les ostéopathes reçoivent le même identifiant que les professions de santé réglementées, sans en avoir le statut.</p>
+    <p>Car le statut, lui, n'a pas bougé. L'ostéopathe français n'est pas inscrit au code de la santé publique comme auxiliaire médical. Il est titulaire d'un titre protégé. Il n'est pas remboursé par l'Assurance maladie. C'est cette position intermédiaire, quinze ans après la reconnaissance, qui structure tous les débats en cours.</p>
+    <h3>Ce que dit l'IGAS</h3>
+    <p>Le rapport de l'Inspection générale des affaires sociales sur l'agrément et les capacités d'accueil des établissements de formation en ostéopathie et chiropraxie formule <strong>vingt-six recommandations</strong>. Trois méritent d'être connues des étudiants. Intégrer les ostéopathes au code de la santé publique comme auxiliaires médicaux. Créer une autorité de régulation indépendante inspirée du <em>General Osteopathic Council</em> britannique plutôt qu'un ordre professionnel classique ; instituer une commission nationale de suivi des pratiques.</p>
+    <h3>Le débat sur le nourrisson</h3>
+    <p>Le <strong>4 décembre 2024</strong>, l'Académie nationale de médecine publie une mise en garde sur l'ostéopathie viscérale et crânienne chez le nouveau-né, qu'elle qualifie de pratique qui interroge, rappelant l'absence de données probantes et le cadre réglementaire français, qui exige un diagnostic médical préalable avant toute manipulation du crâne ou du rachis d'un enfant de moins de six mois. La Société française de pédiatrie publie une mise au point, l'Ordre des masseurs-kinésithérapeutes salue la position et publie son propre avis critique sur l'ostéopathie crânienne. Le collectif Unité pour l'ostéopathie répond publiquement. Le débat est vif et il n'est pas clos.</p>
+    <h3>Le mouvement politique</h3>
+    <p>Le <strong>18 février 2025</strong>, le député Romain Daubié interroge le gouvernement en citant le rapport de l'IGAS et des chiffres qui font débat. La réponse est publiée le <strong>16 juin 2026</strong>. Le gouvernement se dit attentif à l'encadrement de l'enseignement et de la pratique, et renvoie à un projet de loi sur la régulation de l'enseignement supérieur privé. Le dossier n'est donc pas traité comme une question de santé, mais comme une question d'écoles.</p>
+  </div>
+  <div class="sciencebox">
+    <div class="tag">Méthode · les chiffres qui ne concordent pas</div>
+    <h4>Combien y a-t-il d'ostéopathes en France ? Personne ne le sait exactement</h4>
+    <p>La question parlementaire de février 2025, s'appuyant sur l'IGAS, avance <strong>36 881 ostéopathes enregistrés en 2022, dont 15 043 déclarés actifs</strong>. Un dossier professionnel de 2024 avance, avec une méthodologie propre croisant ADELI, CIPAV et RPPS, <strong>30 122 actifs</strong>, un fichier ADELI de 41 579 inscrits jugé obsolète, environ 2 000 nouveaux diplômés par an et un ratio moyen d'un ostéopathe pour 2 270 habitants.</p>
+    <p>Ces jeux de chiffres ne se recoupent pas, parce qu'ils ne définissent pas « actif » de la même façon. Et surtout, la DREES, dans son communiqué du 28 juillet 2025 sur la démographie des professionnels de santé, <strong>n'inclut pas encore les ostéopathes</strong> dans sa diffusion statistique officielle.</p>
+    <p>Conclusion à énoncer telle quelle en cours. Il n'existe pas, en 2026, de statistique publique consolidée sur le nombre d'ostéopathes en exercice en France. Toute affirmation chiffrée doit porter cette réserve.</p>
+  </div>
+  <div class="srcnote"><b>Sources.</b> <a href="https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE4296" target="_blank" rel="noopener">Assemblée nationale, question écrite n° 4296 et réponse du 16 juin 2026</a> · <a href="https://igas.gouv.fr/evaluation-de-la-procedure-dagrement-et-des-capacites-daccueil-des" target="_blank" rel="noopener">IGAS, rapport sur l'agrément des établissements de formation</a> · <a href="https://www.academie-medecine.fr/visceral-and-cranial-osteopathy-in-newborns-a-questionable-practice/?lang=en" target="_blank" rel="noopener">Académie nationale de médecine, 4 décembre 2024</a> · <a href="https://drees.solidarites-sante.gouv.fr/communique-de-presse/250728_CP-demographie-des-professionnels-de-sante" target="_blank" rel="noopener">DREES, communiqué du 28 juillet 2025</a>.</div>
+</div>
+
+<div class="sect L L-en" data-anchor="fr-10">
+  <div class="kick">Part X</div>
+  <h2>Where do we stand? (2015-2026)</h2>
+  <div class="prose">
+    <p>On <strong>16 October 2024</strong>, osteopaths moved from the ADELI register to the <strong>RPPS</strong>, the shared register of health professionals. An administrative act, but the symbolism is real. Osteopaths receive the same identifier as regulated health professions, without their status.</p>
+    <p>Because the status itself has not moved. The French osteopath is not written into the Public Health Code as a medical auxiliary. He or she holds a protected title. Treatment is not reimbursed by the national health insurance. This in-between position, fifteen years after recognition, structures every current debate.</p>
+    <h3>What the IGAS says</h3>
+    <p>The report of the General Inspectorate of Social Affairs on the approval and intake capacity of osteopathy and chiropractic training establishments makes <strong>twenty-six recommendations</strong>. Three are worth knowing. Write osteopaths into the Public Health Code as medical auxiliaries. Create an independent regulatory authority modelled on the British <em>General Osteopathic Council</em> rather than a classical professional order. Set up a national commission monitoring practice.</p>
+    <h3>The infant debate</h3>
+    <p>On <strong>4 December 2024</strong>, the National Academy of Medicine issued a warning on visceral and cranial osteopathy in newborns, calling it a questionable practice, pointing to the absence of supporting evidence and to French regulation, which requires prior medical diagnosis before any manipulation of the skull or spine of a child under six months. The French Society of Paediatrics published a position statement, the physiotherapists' board welcomed the stance and issued its own critical opinion on cranial osteopathy. The Unité pour l'ostéopathie collective replied publicly. The debate is live and unresolved.</p>
+    <h3>The political movement</h3>
+    <p>On <strong>18 February 2025</strong>, MP Romain Daubié questioned the government, citing the IGAS report and contested figures. The answer was published on <strong>16 June 2026</strong>. The government says it is attentive to the regulation of teaching and practice, and points to a bill on the regulation of private higher education. The file is therefore handled as a question of schools, not of health.</p>
+  </div>
+  <div class="sciencebox">
+    <div class="tag">Method · figures that do not match</div>
+    <h4>How many osteopaths are there in France? Nobody knows exactly</h4>
+    <p>The February 2025 parliamentary question, drawing on the IGAS, gives <strong>36,881 osteopaths registered in 2022, of whom 15,043 declared active</strong>. A 2024 professional dossier, using its own method cross-referencing ADELI, CIPAV and RPPS, gives <strong>30,122 active</strong>, an ADELI file of 41,579 entries judged obsolete, roughly 2,000 new graduates a year and an average ratio of one osteopath per 2,270 inhabitants.</p>
+    <p>These figures do not reconcile, because they do not define "active" the same way. And above all, the DREES, in its 28 July 2025 release on health workforce demography, <strong>does not yet include osteopaths</strong> in its official statistics.</p>
+    <p>The conclusion to state as such in class. As of 2026 there is no consolidated public statistic on the number of osteopaths practising in France. Any figure must carry that caveat.</p>
+  </div>
+</div>
+<!-- ============ XI ============ -->
+<div class="sect L L-fr" data-anchor="fr-11" id="fr-11">
+  <div class="kick">Partie XI</div>
+  <h2>Les courants conceptuels, ce qui fait une école de pensée</h2>
+  <div class="prose">
+    <p>On parle volontiers de « l'ostéopathie » au singulier. Dans les faits, un étudiant français rencontre au cours de sa formation cinq ou six manières différentes de concevoir ce qu'il fait avec ses mains. Ces manières ne sont pas des variantes techniques. Ce sont des <strong>théories concurrentes du corps</strong>, nées à des époques différentes, souvent sans se réfuter les unes les autres.</p>
+    <p>Un courant ostéopathique, c'est trois choses réunies. Un <strong>postulat</strong> sur ce qui rend malade, une <strong>gestuelle</strong> qui en découle, et une <strong>lignée d'enseignants</strong> qui la transmet. C'est le troisième élément qui fait la force des courants et leur difficulté. On n'y adhère pas par lecture d'articles, on y entre par apprentissage auprès de quelqu'un.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Courant</th><th>Origine</th><th>Postulat central</th><th>État de la preuve</th></tr></thead>
+      <tbody>
+        <tr><td><b>Structurel / classique</b></td><td>Still (1874), Littlejohn, Wernham</td><td>La structure gouverne la fonction ; la mécanique rachidienne conditionne la physiologie</td><td>Modèle biomécanique historique, jamais validé indépendamment</td></tr>
+        <tr><td><b>Lois de Fryette</b></td><td>Fryette 1918, Nelson 1948</td><td>Le couplage inclinaison/rotation obéit à trois lois selon la position du rachis</td><td>Testé en 2024, compatible dans 57 % des cas seulement</td></tr>
+        <tr><td><b>Techniques codifiées</b></td><td>Mitchell 1948, Jones 1955, Schiowitz</td><td>Énergie musculaire, contre-tension, relâchement positionnel facilité</td><td>Essais nombreux, qualité faible à modérée, résultats mitigés</td></tr>
+        <tr><td><b>Facilitation médullaire</b></td><td>Korr &amp; Denslow, Kirksville, 1945-1975</td><td>Un segment médullaire chroniquement stressé abaisse son seuil d'excitabilité</td><td>Absorbé par les modèles de sensibilisation centrale</td></tr>
+        <tr><td><b>Crânien</b></td><td>Sutherland (1939), Magoun, Becker, Jealous</td><td>Mécanisme respiratoire primaire, mobilité des sutures, rythme crânio-sacré</td><td>Fiabilité inter-examinateur nulle ; changement de paradigme demandé (2024)</td></tr>
+        <tr><td><b>Viscéral</b></td><td>Barral &amp; Mercier (1983), Weischenck</td><td>Les organes ont une mobilité et une motilité dont la perte retentit à distance</td><td>Preuve limitée ; diagnostic palpatoire non validé</td></tr>
+        <tr><td><b>Tissulaire / fluidique</b></td><td>Tricot, Poyet, biodynamique</td><td>Écoute des tissus, du « corps conscient », des forces de santé</td><td>Aucune littérature indexée propre identifiée</td></tr>
+        <tr><td><b>Chaînes myofasciales</b></td><td>Bienfait, Busquet, Struyf-Denys</td><td>Le corps se lit en chaînes fonctionnelles, non en segments isolés</td><td>Littérature française clairsemée, peu indexée</td></tr>
+        <tr><td><b>Evidence-informed</b></td><td>Cerritelli, Esteves, Lunghi, Zegarra-Parodi (2010s-2020s)</td><td>Le soin agit par le toucher, la relation et la modulation de la douleur</td><td>Cadre théorique récent, en cours d'évaluation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <h3>Le structurel, et son squelette théorique</h3>
+    <p>C'est l'ostéopathie d'origine, et c'est encore le tronc de la formation. <strong>John Martin Littlejohn</strong> (mort en 1947) lui a donné son modèle mécanique le plus élaboré, le corps debout comme structure architecturale, traversé de <strong>lignes de force</strong>, lignes de gravité et lignes de poids, antérieures et postérieures, qui se répartissent sur un <strong>polygone de sustentation</strong>. Les courbures rachidiennes s'y compensent mutuellement ; perturber l'une retentit sur les autres. C'est un des premiers modèles posturaux globaux, et il précède largement la posturologie française.</p>
+    <p>Le site du John Wernham College rappelle une chose que la mémoire professionnelle efface volontiers. Still et Littlejohn <strong>n'ont jamais travaillé ensemble et n'étaient pas d'accord</strong>. Still restait centré sur la structure anatomique, Littlejohn développait une lecture physiologique et mécanique globale. L'« ostéopathie classique » de <strong>John Wernham</strong>, transmise en France dès les séminaires de Gény, est la descendance de Littlejohn, pas celle de Still.</p>
+    <p>À côté, les <strong>lois de Fryette</strong> (1918, complétées par Nelson en 1948) fournissent depuis un siècle la grammaire du diagnostic vertébral, avec la dysfonction de type I en position neutre et de type II en flexion ou extension. Elles sont enseignées comme des quasi-axiomes.</p>
+  </div>
+
+  <div class="sciencebox">
+    <div class="tag">État de la preuve · Fryette</div>
+    <h4>Un siècle d'enseignement, testé une fois</h4>
+    <p>Haughton, Barr, Gupta <em>et al.</em> ont analysé en 2024 l'orientation tridimensionnelle de <strong>531 vertèbres thoraciques et lombaires</strong> issues de 82 scanners d'un jeu de données ouvert. <strong>56,9 %</strong> des vertèbres présentaient une orientation compatible avec les lois de Fryette. Statistiquement significatif, cliniquement très éloigné d'une loi biomécanique fiable. Seuls T5, T6, T7 et T10 montrent une association plus robuste.</p>
+    <p>Ce que cela change pour un étudiant. Les lois de Fryette restent un <strong>outil pédagogique</strong> utile pour organiser un raisonnement, et cessent d'être une description du réel. La distinction vaut d'être faite explicitement en formation.</p>
+    <p class="mini">Haughton D.R. <em>et al.</em>, <em>Journal of Osteopathic Medicine</em>, 2024, 124(10):429-435. DOI <a href="https://doi.org/10.1515/jom-2023-0088" target="_blank" rel="noopener">10.1515/jom-2023-0088</a></p>
+  </div>
+
+  <div class="prose">
+    <h3>Korr, ou la première tentative scientifique</h3>
+    <p>En <strong>1945</strong>, le physiologiste <strong>Irvin M. Korr</strong> (1909-2004) est invité par <strong>J. Stedman Denslow</strong> à rejoindre le collège de Kirksville pour un an. Il y restera trente ans. Dès 1947, ils publient dans l'<em>American Journal of Physiology</em> des travaux électromyographiques sur les seuils réflexes liés à la lésion ostéopathique, et formulent le concept de <strong>segment facilité</strong>. Un segment médullaire soumis à un stress chronique voit son seuil d'excitabilité durablement abaissé.</p>
+    <p>C'est le premier pont sérieux entre la clinique ostéopathique et la neurophysiologie académique. Son destin est instructif. Le concept n'a pas été réfuté, il a été <strong>absorbé</strong> par les modèles contemporains de sensibilisation centrale et périphérique en douleur chronique. Une bonne idée qui a été digérée par une discipline plus large.</p>
+
+    <h3>Le crânien, courant le plus enseigné et le plus contesté</h3>
+    <p><strong>William Garner Sutherland</strong> (1873-1954) postule cinq composantes en interaction, la motilité inhérente du système nerveux central, fluctuation du liquide céphalo-rachidien, mobilité des membranes de tension réciproque, mobilité des os du crâne, mobilité involontaire du sacrum. <strong>Harold Magoun</strong> systématise, <strong>Rollin Becker</strong> approfondit, <strong>Viola Frymann</strong> développe la pédiatrie, <strong>James Jealous</strong> fonde la <strong>biodynamique</strong> à partir de la fin des années 1970 en croisant Sutherland avec l'embryologie d'Erich Blechschmidt.</p>
+    <p>Une distinction est impérative et rarement faite. <strong>John Upledger</strong>, ostéopathe américain formé dans cette lignée, développe à partir des années 1970 la <strong>thérapie craniosacrale</strong> (CST), avec son protocole en dix étapes et son vocabulaire propre. La CST est une pratique <em>distincte</em>, ouverte à des non-ostéopathes, et non réservée à la profession. L'ostéopathie crânienne et la craniosacrale d'Upledger dérivent d'une source commune mais ne sont pas la même chose.</p>
+  </div>
+
+  <div class="sciencebox">
+    <div class="tag">État de la preuve · crânien</div>
+    <h4>Ce que dit la littérature en 2024-2025</h4>
+    <p><b>Fiabilité.</b> Les études de fiabilité de la palpation du rythme crânien convergent, avec une fiabilité intra-examinateur passable à bonne et une fiabilité <strong>inter-examinateur pauvre à inexistante</strong>. Deux praticiens ne trouvent pas la même chose sur le même patient. Sommerfeld <em>et al.</em> (2004) ne trouvaient aucun accord au-delà du hasard. Álvarez <em>et al.</em> (<em>Cureus</em>, 2024, DOI <a href="https://doi.org/10.7759/cureus.68219" target="_blank" rel="noopener">10.7759/cureus.68219</a>) confirment et concluent que la palpation crânienne pourrait ne pas diagnostiquer de façon fiable des dysfonctions à distance.</p>
+    <p><b>Mécanisme.</b> La revue systématique de référence, signée Mériaux, <strong>Stubbe</strong>, Guyon <em>et al.</em>, <em>Healthcare</em>, 2024, 12(24):2503, DOI <a href="https://doi.org/10.3390/healthcare12242503" target="_blank" rel="noopener">10.3390/healthcare12242503</a>, avec un protocole PROSPERO enregistré, conclut que l'hypothèse dominante dans la littérature scientifique n'est plus celle de Sutherland mais celle d'ondes de très basse fréquence pilotées par le système nerveux autonome, et appelle explicitement à un <strong>changement de paradigme</strong>.</p>
+    <p><b>Nuance.</b> Cela ne veut pas dire que rien n'est perçu. Pelz <em>et al.</em> (<em>Scientific Reports</em>, 2023, DOI <a href="https://doi.org/10.1038/s41598-023-33644-8" target="_blank" rel="noopener">10.1038/s41598-023-33644-8</a>) montrent une corrélation entre le rythme palpé et une activité physiologique réellement mesurable, mais ils la réinterprètent comme un corrélat du système nerveux autonome, pas comme une validation du modèle anatomique d'origine.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Le viscéral, courant français</h3>
+    <p><strong>Jean-Pierre Barral</strong> et <strong>Pierre Mercier</strong> publient en <strong>1983</strong> <em>Manipulations viscérales</em>, ouvrage fondateur d'un courant qui deviendra l'un des grands produits d'exportation de l'ostéopathie française. Le postulat distingue la <strong>mobilité</strong> d'un organe, son mouvement lié à la respiration et à la posture, et sa <strong>motilité</strong>, mouvement intrinsèque de faible amplitude. Le courant prolonge une lignée française plus ancienne, celle de <strong>Frantz Glénard</strong> et de sa splanchnoptose au XIX<sup>e</sup> siècle, et se poursuit avec <strong>Jacques Weischenck</strong> et <strong>Serge Paoletti</strong>, dont les travaux sur les fascias élargissent le modèle.</p>
+    <p>Le rapport commandé en 2016-2017 par l'Ordre des masseurs-kinésithérapeutes au collectif <strong>CORTECS</strong> (université Grenoble-Alpes) est sévère. Il pointe l'absence de validation robuste des procédures diagnostiques et l'absence de substrat anatomo-physiologique établi pour la motilité. Côté essais cliniques, le tableau est contrasté, avec un résultat positif sur le reflux gastro-œsophagien à court terme (Eguaras <em>et al.</em>, 2019), négatif sur la lombalgie (Panagopoulos <em>et al.</em>, 2014), et une revue systématique de 2023 conclut à une <strong>preuve limitée</strong>, avec seulement trois essais sur onze présentant un faible risque de biais.</p>
+
+    <h3>Le tissulaire et les chaînes, deux courants très français</h3>
+    <p><strong>Pierre Tricot</strong> développe à partir des années 1990 l'<strong>approche tissulaire</strong>, qui déplace le geste de la correction mécanique vers l'écoute d'un « modèle du corps conscient ». <strong>Maurice-Raymond Poyet</strong> laisse une méthode qui porte son nom, aujourd'hui enseignée en formation continue et institutionnellement distincte de l'ostéopathie. Ni l'un ni l'autre n'a produit de littérature scientifique indexée propre. Ce sont des courants transmis par apprentissage, ce qui n'est pas un défaut en soi mais qu'il faut savoir nommer.</p>
+    <p>Le courant des <strong>chaînes myofasciales</strong> est différent. <strong>Marcel Bienfait</strong> et <strong>Léopold Busquet</strong>, kinésithérapeutes-ostéopathes, lisent le corps en chaînes fonctionnelles plutôt qu'en segments articulaires. Leurs concepts sont aujourd'hui intégrés au tronc commun de l'enseignement ostéopathique français. La méthode <strong>GDS</strong> de <strong>Godelieve Struyf-Denys</strong>, elle, naît en kinésithérapie et reste para-ostéopathique, utilisée par des ostéopathes mais pas née chez eux. <strong>Jean Jarricot</strong>, médecin lyonnais des dermalgies réflexes, est une source d'inspiration extérieure à la profession, aujourd'hui davantage mobilisée en réflexothérapie qu'en ostéopathie.</p>
+
+    <h3>Le tournant evidence-informed</h3>
+    <p>À partir des années 2010, un courant international porté notamment par <strong>Francesco Cerritelli</strong>, <strong>Jorge Esteves</strong>, <strong>Christian Lunghi</strong> et <strong>Giacomo Consorti</strong> entreprend de refonder les principes ostéopathiques sur des bases neuroscientifiques et biopsychosociales. Le déplacement est radical. Le soin agirait principalement par modulation de la douleur, alliance thérapeutique et régulation neurovégétative, et non par correction mécanique d'une lésion localisée. Cerritelli et Esteves proposent en 2022 un modèle « énactif-écologique » (<em>Healthcare</em>, DOI <a href="https://doi.org/10.3390/healthcare10061092" target="_blank" rel="noopener">10.3390/healthcare10061092</a>) ; Consorti <em>et al.</em> reconceptualisent la dysfonction somatique en 2023 ; Lunghi <em>et al.</em> publient en 2026 une synthèse ambitieuse, « Untangling the Osteopathic Gordian Knot ».</p>
+    <p>Le rattachement français de ce courant passe principalement par <strong>Rafael Zegarra-Parodi</strong> et l'organisme <strong>BMS Formation</strong>, fondé à Paris en 2019 avec Guillaume Renaud de la Faverie, qui revendique une ostéopathie <em>evidence-informed</em> étendant le modèle biopsychosocial à une dimension existentielle, nourrie d'anthropologie médicale, et qui publie régulièrement avec Cerritelli, Esteves, Lunghi, Draper-Rodi et Schleip. La <strong>COME Collaboration</strong> joue le même rôle à l'échelle internationale.</p>
+    <p>Ce courant est lui-même critiqué de l'intérieur. Thomson et MacMillan, dans « What's wrong with osteopathy? » (<em>IJOM</em>, 2023, DOI <a href="https://doi.org/10.1016/j.ijosm.2023.100659" target="_blank" rel="noopener">10.1016/j.ijosm.2023.100659</a>), reprochent à la profession un écart persistant entre discours <em>evidence-based</em> et pratique réelle, et une identité fragmentée. David Nicholls leur répond en 2024. Le débat, entre ostéopathes chercheurs, est l'un des plus vifs de la discipline aujourd'hui.</p>
+
+    <h3>Le destin des concepts fondateurs</h3>
+    <p>Trois trajectoires méritent d'être connues.</p>
+    <p><strong>De la lésion ostéopathique à la dysfonction somatique.</strong> Le changement de mot est daté et documenté. Il vient des travaux, à partir de <strong>1968</strong>, d'un comité de l'<em>Academy of Applied Osteopathy</em>, et la définition officielle paraît en <strong>avril 1981</strong> dans le premier <em>Glossary of Osteopathic Terminology</em> de l'ECOP. Le motif initial était <strong>administratif</strong>, permettre à la profession de définir elle-même ses codes diagnostiques plutôt que de subir ceux des assureurs. Cinquante ans plus tard, le terme est toujours en débat théorique.</p>
+    <p><strong>La règle de l'artère.</strong> L'aphorisme le plus cité de Still a été soumis à réexamen critique par la profession elle-même, dans un article du <em>JAOA</em> de 2018 au titre explicite : « The Rule of the Artery Is Supreme. Or, Is It? ». Même les maximes fondatrices sont aujourd'hui des objets d'étude.</p>
+    <p><strong>Le fascia.</strong> Longtemps tissu de soutien passif, sauf dans les courants viscéral et fascial français, il est devenu depuis le milieu des années 2000 un objet de recherche international de premier plan, structuré autour des <em>Fascia Research Congress</em> (2007) et porté par <strong>Robert Schleip</strong> à Ulm et <strong>Carla Stecco</strong> à Padoue. C'est l'un des rares points où une intuition ostéopathique ancienne a rencontré une recherche fondamentale active.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Ligne de fracture</th><th>D'un côté</th><th>De l'autre</th></tr></thead>
+      <tbody>
+        <tr><td>Médical / non-médical</td><td>DO américain, médecin de plein exercice ; en France, médecins et kinés ostéopathes</td><td>Ostéopathe européen non-médecin, à titre protégé</td></tr>
+        <tr><td>Structurel / fluidique</td><td>Still, Littlejohn, Fryette, Mitchell. Articulaire, biomécanique</td><td>Sutherland, Becker, Jealous, Tricot. Écoute, tissulaire, vitalisme diffus</td></tr>
+        <tr><td>Technique / philosophie</td><td>Geste standardisé, fidélité aux principes</td><td>Pratique réflexive centrée sur le patient</td></tr>
+        <tr><td>Profession / méthode</td><td>Titre protégé depuis 2002, formation de 4 860 h</td><td>Techniques circulant hors du cadre professionnel</td></tr>
+        <tr><td>Preuve / tradition</td><td>Courants qui acceptent la réfutation empirique</td><td>Courants transmis par apprentissage, hors littérature indexée</td></tr>
+        <tr><td>Université / école privée</td><td>États-Unis, Royaume-Uni, Italie, Suisse, en cursus universitaire</td><td>France, en écoles privées agréées par le ministère de la Santé</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="sect L L-en" data-anchor="fr-11">
+  <div class="kick">Part XI</div>
+  <h2>Conceptual currents, what makes a school of thought</h2>
+  <div class="prose">
+    <p>We readily speak of "osteopathy" in the singular. In practice, a French student meets five or six different ways of conceiving what the hands are doing. These are not technical variants. They are <strong>competing theories of the body</strong>, born at different times, often without refuting one another.</p>
+    <p>An osteopathic current is three things at once. A <strong>postulate</strong> about what makes people ill, a <strong>gesture</strong> that follows from it, and a <strong>lineage of teachers</strong> that transmits it. The third element is what gives currents their strength and their difficulty. You do not join one by reading papers, you enter it by apprenticeship to someone.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Current</th><th>Origin</th><th>Central postulate</th><th>State of the evidence</th></tr></thead>
+      <tbody>
+        <tr><td><b>Structural / classical</b></td><td>Still (1874), Littlejohn, Wernham</td><td>Structure governs function; spinal mechanics condition physiology</td><td>Historical biomechanical model, never independently validated</td></tr>
+        <tr><td><b>Fryette's laws</b></td><td>Fryette 1918, Nelson 1948</td><td>Side-bending/rotation coupling follows three laws depending on spinal position</td><td>Tested in 2024, compatible in only 57% of cases</td></tr>
+        <tr><td><b>Codified techniques</b></td><td>Mitchell 1948, Jones 1955, Schiowitz</td><td>Muscle energy, counterstrain, facilitated positional release</td><td>Many trials, low to moderate quality, mixed results</td></tr>
+        <tr><td><b>Spinal facilitation</b></td><td>Korr &amp; Denslow, Kirksville, 1945-1975</td><td>A chronically stressed spinal segment lowers its excitability threshold</td><td>Absorbed into central sensitisation models</td></tr>
+        <tr><td><b>Cranial</b></td><td>Sutherland (1939), Magoun, Becker, Jealous</td><td>Primary respiratory mechanism, sutural mobility, craniosacral rhythm</td><td>No inter-examiner reliability; paradigm shift called for (2024)</td></tr>
+        <tr><td><b>Visceral</b></td><td>Barral &amp; Mercier (1983), Weischenck</td><td>Organs have mobility and motility whose loss echoes at a distance</td><td>Limited evidence; palpatory diagnosis unvalidated</td></tr>
+        <tr><td><b>Tissue / fluidic</b></td><td>Tricot, Poyet, biodynamics</td><td>Listening to tissues, the "conscious body", forces of health</td><td>No indexed literature of its own identified</td></tr>
+        <tr><td><b>Myofascial chains</b></td><td>Bienfait, Busquet, Struyf-Denys</td><td>The body reads as functional chains, not isolated segments</td><td>Sparse, largely unindexed French literature</td></tr>
+        <tr><td><b>Evidence-informed</b></td><td>Cerritelli, Esteves, Lunghi, Zegarra-Parodi (2010s-2020s)</td><td>Care works through touch, relationship and pain modulation</td><td>Recent theoretical framework, under evaluation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="prose">
+    <h3>The structural current and its theoretical skeleton</h3>
+    <p>This is osteopathy as it began, and still the trunk of the curriculum. <strong>John Martin Littlejohn</strong> (d. 1947) gave it its most elaborate mechanical model, the standing body as an architectural structure crossed by <strong>lines of force</strong>, gravity lines and weight lines, anterior and posterior, distributed over a <strong>polygon of support</strong>. Spinal curves compensate one another; disturb one and the others answer. It is one of the first global postural models, and it long predates French posturology.</p>
+    <p>The John Wernham College website recalls something professional memory readily erases. Still and Littlejohn <strong>never worked together and did not agree</strong>. Still stayed centred on anatomical structure; Littlejohn developed a global physiological and mechanical reading. The "classical osteopathy" of <strong>John Wernham</strong>, brought to France in Gény's seminars, descends from Littlejohn, not from Still.</p>
+    <p>Alongside, <strong>Fryette's laws</strong> (1918, completed by Nelson in 1948) have supplied the grammar of spinal diagnosis for a century, with type I dysfunction in neutral and type II in flexion or extension. They are taught as near-axioms.</p>
+  </div>
+
+  <div class="sciencebox">
+    <div class="tag">State of the evidence · Fryette</div>
+    <h4>A century of teaching, tested once</h4>
+    <p>Haughton, Barr, Gupta <em>et al.</em> analysed in 2024 the three-dimensional orientation of <strong>531 thoracic and lumbar vertebrae</strong> from 82 CT scans in an open dataset. <strong>56.9%</strong> of vertebrae showed an orientation compatible with Fryette's laws. Statistically significant, clinically a long way from a reliable biomechanical law. Only T5, T6, T7 and T10 show a more robust association.</p>
+    <p>What this changes for a student. Fryette's laws remain a useful <strong>teaching tool</strong> for organising reasoning, and cease to be a description of reality. The distinction is worth making explicitly in training.</p>
+    <p class="mini">Haughton D.R. <em>et al.</em>, <em>Journal of Osteopathic Medicine</em>, 2024, 124(10):429-435. DOI <a href="https://doi.org/10.1515/jom-2023-0088" target="_blank" rel="noopener">10.1515/jom-2023-0088</a></p>
+  </div>
+
+  <div class="prose">
+    <h3>Korr, or the first scientific attempt</h3>
+    <p>In <strong>1945</strong> the physiologist <strong>Irvin M. Korr</strong> (1909-2004) was invited by <strong>J. Stedman Denslow</strong> to join the Kirksville college for a year. He stayed thirty. From 1947 they published electromyographic work in the <em>American Journal of Physiology</em> on reflex thresholds linked to the osteopathic lesion, and formulated the concept of the <strong>facilitated segment</strong>. A spinal segment under chronic stress has its excitability threshold durably lowered.</p>
+    <p>It was the first serious bridge between osteopathic clinical work and academic neurophysiology. Its fate is instructive. The concept was not refuted, it was <strong>absorbed</strong> by contemporary models of central and peripheral sensitisation in chronic pain. A good idea digested by a larger discipline.</p>
+
+    <h3>Cranial, the most taught and the most contested</h3>
+    <p><strong>William Garner Sutherland</strong> (1873-1954) postulated five interacting components, the inherent motility of the central nervous system, fluctuation of the cerebrospinal fluid, mobility of the reciprocal tension membranes, mobility of the cranial bones, involuntary mobility of the sacrum. <strong>Harold Magoun</strong> systematised, <strong>Rollin Becker</strong> deepened, <strong>Viola Frymann</strong> developed the paediatric field, <strong>James Jealous</strong> founded <strong>biodynamics</strong> from the late 1970s by crossing Sutherland with Erich Blechschmidt's embryology.</p>
+    <p>One distinction is imperative and rarely made. <strong>John Upledger</strong>, an American osteopath trained in this lineage, developed <strong>CranioSacral Therapy</strong> from the 1970s, with its ten-step protocol and its own vocabulary. CST is a <em>distinct</em> practice, open to non-osteopaths and not reserved to the profession. Cranial osteopathy and Upledger's craniosacral therapy share a source but are not the same thing.</p>
+  </div>
+
+  <div class="sciencebox">
+    <div class="tag">State of the evidence · cranial</div>
+    <h4>What the 2024-2025 literature says</h4>
+    <p><b>Reliability.</b> Reliability studies on palpation of the cranial rhythm converge, with fair to good intra-examiner reliability and <strong>poor to non-existent inter-examiner reliability</strong>. Two practitioners do not find the same thing on the same patient. Sommerfeld <em>et al.</em> (2004) found no agreement beyond chance. Álvarez <em>et al.</em> (<em>Cureus</em>, 2024, DOI <a href="https://doi.org/10.7759/cureus.68219" target="_blank" rel="noopener">10.7759/cureus.68219</a>) confirm this and conclude that cranial palpation may not reliably diagnose distal dysfunctions.</p>
+    <p><b>Mechanism.</b> The reference systematic review, by Mériaux, <strong>Stubbe</strong>, Guyon <em>et al.</em>, <em>Healthcare</em>, 2024, 12(24):2503, DOI <a href="https://doi.org/10.3390/healthcare12242503" target="_blank" rel="noopener">10.3390/healthcare12242503</a>, PROSPERO-registered, concludes that the dominant hypothesis in the scientific literature is no longer Sutherland's but that of very-low-frequency waves driven by autonomic nervous system activity, and explicitly calls for a <strong>paradigm shift</strong>.</p>
+    <p><b>Nuance.</b> This does not mean nothing is perceived. Pelz <em>et al.</em> (<em>Scientific Reports</em>, 2023, DOI <a href="https://doi.org/10.1038/s41598-023-33644-8" target="_blank" rel="noopener">10.1038/s41598-023-33644-8</a>) show a correlation between the palpated rhythm and a measurable physiological activity, but they reinterpret it as an autonomic correlate, not as validation of the original anatomical model.</p>
+  </div>
+
+  <div class="prose">
+    <h3>Visceral, a French current</h3>
+    <p><strong>Jean-Pierre Barral</strong> and <strong>Pierre Mercier</strong> published <em>Manipulations viscérales</em> in <strong>1983</strong>, the founding work of a current that became one of French osteopathy's great exports. The postulate distinguishes an organ's <strong>mobility</strong>, its movement linked to breathing and posture, from its <strong>motility</strong>, an intrinsic low-amplitude movement. The current belongs to an older French lineage, that of <strong>Frantz Glénard</strong> and his nineteenth-century splanchnoptosis, and continues with <strong>Jacques Weischenck</strong> and <strong>Serge Paoletti</strong>, whose fascia work widened the model.</p>
+    <p>The report commissioned in 2016-2017 by the French physiotherapists' board from the <strong>CORTECS</strong> collective (Université Grenoble-Alpes) is severe. It points to the absence of robust validation of the diagnostic procedures and of any established anatomical-physiological substrate for motility. On clinical trials the picture is mixed, with a positive result for gastro-oesophageal reflux in the short term (Eguaras <em>et al.</em>, 2019), negative for low back pain (Panagopoulos <em>et al.</em>, 2014), and a 2023 systematic review concludes to <strong>limited evidence</strong>, with only three of eleven trials at low risk of bias.</p>
+
+    <h3>Tissue work and chains, two very French currents</h3>
+    <p><strong>Pierre Tricot</strong> developed the <strong>tissue approach</strong> from the 1990s, shifting the gesture from mechanical correction to listening to a "conscious body model". <strong>Maurice-Raymond Poyet</strong> left a method bearing his name, now taught in continuing education and institutionally distinct from osteopathy. Neither produced an indexed scientific literature of its own. These are currents transmitted by apprenticeship, which is not a fault in itself but should be named.</p>
+    <p>The <strong>myofascial chains</strong> current is different. <strong>Marcel Bienfait</strong> and <strong>Léopold Busquet</strong>, physiotherapist-osteopaths, read the body as functional chains rather than isolated joint segments. Their concepts are now part of the common trunk of French osteopathic teaching. The <strong>GDS</strong> method of <strong>Godelieve Struyf-Denys</strong>, by contrast, was born in physiotherapy and remains para-osteopathic, used by osteopaths but not born among them. <strong>Jean Jarricot</strong>, the Lyon physician of reflex dermalgia, is a source of inspiration external to the profession, today drawn on more in reflexology than in osteopathy.</p>
+
+    <h3>The evidence-informed turn</h3>
+    <p>From the 2010s an international current carried notably by <strong>Francesco Cerritelli</strong>, <strong>Jorge Esteves</strong>, <strong>Christian Lunghi</strong> and <strong>Giacomo Consorti</strong> set out to refound osteopathic principles on neuroscientific and biopsychosocial ground. The shift is radical. Care would work mainly through pain modulation, therapeutic alliance and autonomic regulation, not through mechanical correction of a localised lesion. Cerritelli and Esteves proposed an "enactive-ecological" model in 2022 (<em>Healthcare</em>, DOI <a href="https://doi.org/10.3390/healthcare10061092" target="_blank" rel="noopener">10.3390/healthcare10061092</a>); Consorti <em>et al.</em> reconceptualised somatic dysfunction in 2023; Lunghi <em>et al.</em> published an ambitious synthesis in 2026, "Untangling the Osteopathic Gordian Knot".</p>
+    <p>The French anchor of this current runs mainly through <strong>Rafael Zegarra-Parodi</strong> and <strong>BMS Formation</strong>, founded in Paris in 2019 with Guillaume Renaud de la Faverie, which claims an evidence-informed osteopathy extending the biopsychosocial model to an existential dimension, informed by medical anthropology, and which publishes regularly with Cerritelli, Esteves, Lunghi, Draper-Rodi and Schleip. The <strong>COME Collaboration</strong> plays the same role internationally.</p>
+    <p>This current is itself criticised from within. Thomson and MacMillan, in "What's wrong with osteopathy?" (<em>IJOM</em>, 2023, DOI <a href="https://doi.org/10.1016/j.ijosm.2023.100659" target="_blank" rel="noopener">10.1016/j.ijosm.2023.100659</a>), fault the profession for a persistent gap between evidence-based discourse and actual practice, and for a fragmented identity. David Nicholls replied in 2024. The debate, among osteopath-researchers, is one of the liveliest in the discipline today.</p>
+
+    <h3>What became of the founding concepts</h3>
+    <p>Three trajectories are worth knowing.</p>
+    <p><strong>From osteopathic lesion to somatic dysfunction.</strong> The change of word is dated and documented. It comes from the work, from <strong>1968</strong>, of a committee of the <em>Academy of Applied Osteopathy</em>, and the official definition appeared in <strong>April 1981</strong> in ECOP's first <em>Glossary of Osteopathic Terminology</em>. The initial motive was <strong>administrative</strong>, letting the profession define its own diagnostic codes rather than inherit the insurers'. Fifty years on, the term is still theoretically contested.</p>
+    <p><strong>The rule of the artery.</strong> Still's most quoted aphorism was submitted to critical re-examination by the profession itself, in a 2018 <em>JAOA</em> article with an explicit title: "The Rule of the Artery Is Supreme. Or, Is It?". Even the founding maxims are now objects of study.</p>
+    <p><strong>Fascia.</strong> Long treated as passive supporting tissue, except in the French visceral and fascial currents, it has since the mid-2000s become a major international research object, organised around the <em>Fascia Research Congress</em> (2007) and carried by <strong>Robert Schleip</strong> in Ulm and <strong>Carla Stecco</strong> in Padua. It is one of the rare points where an old osteopathic intuition met an active basic-science field.</p>
+  </div>
+
+  <div class="tablewrap">
+    <table class="t">
+      <thead><tr><th>Fault line</th><th>On one side</th><th>On the other</th></tr></thead>
+      <tbody>
+        <tr><td>Medical / non-medical</td><td>American DO, fully licensed physician; in France, physician and physiotherapist osteopaths</td><td>European non-physician osteopath, protected title</td></tr>
+        <tr><td>Structural / fluidic</td><td>Still, Littlejohn, Fryette, Mitchell. Articular, biomechanical</td><td>Sutherland, Becker, Jealous, Tricot. Listening, tissue, diffuse vitalism</td></tr>
+        <tr><td>Technique / philosophy</td><td>Standardised gesture, fidelity to principles</td><td>Reflexive, patient-centred practice</td></tr>
+        <tr><td>Profession / method</td><td>Protected title since 2002, 4,860 hours of training</td><td>Techniques circulating outside the professional frame</td></tr>
+        <tr><td>Evidence / tradition</td><td>Currents that accept empirical refutation</td><td>Currents transmitted by apprenticeship, outside indexed literature</td></tr>
+        <tr><td>University / private school</td><td>USA, UK, Italy, Switzerland, in university degrees</td><td>France, in private schools approved by the Health Ministry</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- ============ XII ============ -->
+<div class="sect" data-anchor="fr-12" id="fr-12">
+  <div class="kick L L-fr">Partie XII</div>
+  <div class="kick L L-en">Part XII</div>
+  <h2 class="L L-fr">Frise française, avec les noms</h2>
+  <h2 class="L L-en">French timeline, with the names</h2>
+  <div class="prose">
+    <p class="L L-fr">Quarante-deux jalons, de la première publication française à la réponse du gouvernement en juin 2026. Chaque entrée porte les noms des personnes concernées. Les entrées marquées d'un point d'interrogation signalent une date que les sources ne permettent pas de trancher.</p>
+    <p class="L L-en">Forty-two markers, from the first French publication to the government's answer in June 2026. Every entry carries the names of the people involved. Entries flagged with a question mark indicate a date the sources cannot settle.</p>
+  </div>
+  <div class="tl-filters" id="frfilters"></div>
+  <div class="timeline fr-tl" id="frtimeline"></div>
+</div>
+
+
+    <div class="sect">
+      <div class="kick L L-fr">Vérifier ses acquis</div><h2 class="L L-fr">Ce que vous avez retenu</h2>
+      <div class="kick L L-en">Check your knowledge</div><h2 class="L L-en">What you have taken in</h2>
+      <div class="quiz" data-quiz="cfr"></div>
+      <div class="chrono" data-chrono="cfr"></div>
+      <div class="reflex" data-reflex="cfr"></div>
+    </div>
+
+    <details class="src"><summary class="L L-fr">Sources et références</summary><summary class="L L-en">Sources and references</summary><div class="inner">
+      <ul style="margin-left:20px">
+        <li><b>Textes officiels.</b> Arrêté du 6 janvier 1962 ; loi n° 2002-303 du 4 mars 2002, art. 75 ; loi n° 2002-1062 du 6 août 2002 ; décrets n° 2007-435, 2007-437 et 2007-1564 ; loi n° 2014-201 ; décrets n° 2014-1043 et n° 2014-1505 et arrêtés du 12 décembre 2014 ; décrets n° 2017-572 et 2017-573 ; question écrite AN n° 4296 du 18 février 2025 et réponse du 16 juin 2026 ; communiqué DREES du 28 juillet 2025 ; rapport IGAS sur l'agrément des établissements de formation ; avis de la HAS sur les projets de décret ; rapport INSERM du 30 avril 2012 ; Académie nationale de médecine, 5 mars 2013 et 4 décembre 2024 ; avis CNO 2024-05 de l'Ordre des masseurs-kinésithérapeutes.</li>
+        <li><b>Sources primaires numérisées.</b> Moutin L. et Mann G.-A., <em>Manuel d'ostéopathie pratique, théorie et procédés</em>, 1913, Gallica/BnF ; thèse de médecine de Robert Lavezzari, Montpellier, 4 juillet 1913, Wellcome Collection.</li>
+        <li><b>Sources institutionnelles professionnelles.</b> Registre des Ostéopathes de France, historique ; Syndicat Français des Ostéopathes ; Société Française d'Ostéopathie ; Ostéopathes de France ; Académie d'Ostéopathie de France ; European School of Osteopathy, page History ; SMMOF.</li>
+        <li><b>Littérature scientifique.</b> Haughton D.R. <em>et al.</em>, <em>Journal of Osteopathic Medicine</em>, 2024, 124(10):429-435 · Mériaux F., Stubbe L., Guyon A. <em>et al.</em>, <em>Healthcare</em>, 2024, 12(24):2503 · Álvarez L. <em>et al.</em>, <em>Cureus</em>, 2024 · Pelz H. <em>et al.</em>, <em>Scientific Reports</em>, 2023, 13:6712 · Basile F. <em>et al.</em>, <em>IJOM</em>, 2017, 25:21-29 · Cerritelli F. et Esteves J.E., <em>Healthcare</em>, 2022, 10(6):1092 · Consorti G. <em>et al.</em>, <em>Healthcare</em>, 2023, 11(4):479 · Lunghi C. <em>et al.</em>, <em>Healthcare</em>, 2026, 14(9):1221 · Thomson O.P. et MacMillan A., <em>IJOM</em>, 2023, 48:100659 · Nicholls D., <em>IJOM</em>, 2024, 51:100694 · Panagopoulos J. <em>et al.</em>, <em>European Journal of Pain</em>, 2014 · Eguaras N. <em>et al.</em>, <em>Journal of Clinical Medicine</em>, 2019, 8(10):1738 · da Silva F.C. <em>et al.</em>, <em>BMC Complementary Medicine and Therapies</em>, 2023 · Buchbinder R. <em>et al.</em>, <em>The Lancet</em>, 2018, 391(10137):2384-2388 · CORTECS, <em>L'ostéopathie viscérale</em>, rapport au CNOMK, février 2017.</li>
+        <li><b>Pour aller plus loin.</b> Lepers Y., <em>Histoire critique de l'ostéopathie, de Kirksville à l'Université Libre de Bruxelles</em>, la meilleure entrée académique disponible en français sur l'histoire de la discipline.</li>
+      </ul>
+    </div></details>
+    <div class="pagerlinks">
+      <a class="btn ghost L L-fr" style="color:var(--navy);border-color:var(--navy)" href="#ch4" onclick="go('ch4')">← Chapitre 4</a>
+      <a class="btn ghost L L-en" style="color:var(--navy);border-color:var(--navy)" href="#ch4" onclick="go('ch4')">← Chapter 4</a>
       <a class="btn navyb L L-fr" href="#figures" onclick="go('figures')">Les grandes figures →</a>
-      <a class="btn navyb L L-en" href="#figures" onclick="go('figures')">The great figures →</a>
+      <a class="btn navyb L L-en" href="#figures" onclick="go('figures')">The major figures →</a>
     </div>
   </div>
 </section>
@@ -3910,8 +4630,8 @@ body[data-lang="en"] .L-fr{display:none !important}
    DONNÉES BILINGUES / BILINGUAL DATA
 ============================================================ */
 const NAV={
- fr:{accueil:"Accueil",ch1:"1 · Aux origines",ch2:"2 · Still",ch3:"3 · Le monde",ch4:"4 · La science",figures:"Figures",frise:"Frise",galerie:"Galerie",videos:"Vidéos",biblio:"Bibliographie"},
- en:{accueil:"Home",ch1:"1 · Origins",ch2:"2 · Still",ch3:"3 · The world",ch4:"4 · Science",figures:"Figures",frise:"Timeline",galerie:"Gallery",videos:"Videos",biblio:"Bibliography"}
+ fr:{accueil:"Accueil",ch1:"1 · Aux origines",ch2:"2 · Still",ch3:"3 · Le monde",ch4:"4 · La science",ch5:"5 · En France",figures:"Figures",frise:"Frise",galerie:"Galerie",videos:"Vidéos",biblio:"Bibliographie"},
+ en:{accueil:"Home",ch1:"1 · Origins",ch2:"2 · Still",ch3:"3 · The world",ch4:"4 · Science",ch5:"5 · France",figures:"Figures",frise:"Timeline",galerie:"Gallery",videos:"Videos",biblio:"Bibliography"}
 };
 const BRAND={fr:["Aux Sources de l'Ostéopathie","Une histoire documentée"],en:["The Sources of Osteopathy","A documented history"]};
 const MODULES=[
@@ -3926,7 +4646,10 @@ const MODULES=[
   en:{t:"Conquering the world",d:"The Flexner Report, the Californian crisis, the British path, and the century-long struggle of French osteopathy.",meta:"1892-2026"}},
  {id:'ch4',n:'04',
   fr:{t:"L'épreuve de la science",d:"Des principes de Still aux cinq modèles, la dysfonction somatique, les essais cliniques et l'identité en 2026.",meta:"1874-2026"},
-  en:{t:"The test of science",d:"From Still's principles to the five models, somatic dysfunction, clinical trials and identity in 2026.",meta:"1874-2026"}}
+  en:{t:"The test of science",d:"From Still's principles to the five models, somatic dysfunction, clinical trials and identity in 2026.",meta:"1874-2026"}},
+ {id:'ch5',n:'05',
+  fr:{t:"En France",d:"Le manuel oublié de 1913, les deux camps, l'arrêté pris pour un décret, l'exil à Londres, les années noires et les courants conceptuels.",meta:"1913-2026"},
+  en:{t:"France",d:"The forgotten 1913 manual, the two camps, the order mistaken for a decree, the London exile, the dark years and the conceptual currents.",meta:"1913-2026"}}
 ];
 const TLCATS={
  fr:{still:"A.T. Still",usa:"Amérique",intl:"International",france:"France",tech:"Techniques",science:"Science"},
@@ -4416,7 +5139,12 @@ const PODCASTS={
   fr:{t:"L'épreuve de la science",
       d:"Des principes de Still aux méta-analyses de 2026, ce que la recherche a confirmé, transformé ou écarté.",f:null},
   en:{t:"The test of science",
-      d:"From Still's principles to the meta-analyses of 2026, what research has confirmed, transformed or ruled out.",f:null}}
+      d:"From Still's principles to the meta-analyses of 2026, what research has confirmed, transformed or ruled out.",f:null}},
+ ch5:{
+  fr:{t:"En France",
+      d:"Cent treize ans pour passer d'un manuel oublié à un titre protégé, deux camps, un exil et des années noires.",f:null},
+  en:{t:"France",
+      d:"One hundred and thirteen years from a forgotten manual to a protected title, two camps, an exile and the dark years.",f:null}}
 };
 function canAAC(){try{return !!document.createElement('audio').canPlayType('audio/mp4; codecs="mp4a.40.2"')}catch(e){return true}}
 /* langue de l'épisode, null = suit la langue du site */
@@ -5128,14 +5856,14 @@ function setLang(l){
   renderAll();
 }
 function renderAll(){
-  buildStatic(); buildTimeline(); buildFigures();
+  buildStatic(); buildTimeline(); buildFigures(); buildFR(); buildWorld();
   document.querySelectorAll('[data-quiz]').forEach(buildQuiz);
   document.querySelectorAll('[data-match]').forEach(buildMatch);
   document.querySelectorAll('[data-chrono]').forEach(buildChrono);
   document.querySelectorAll('[data-reflex]').forEach(buildReflex);
 }
 /* --- ROUTEUR --- */
-const PAGES=['accueil','ch1','ch2','ch3','ch4','figures','frise','galerie','videos','biblio','mentions','confidentialite'];
+const PAGES=['accueil','ch1','ch2','ch3','ch4','ch5','figures','frise','galerie','videos','biblio','mentions','confidentialite'];
 function go(p){
   if(!PAGES.includes(p))p='accueil';
   document.querySelectorAll('.page').forEach(x=>x.classList.remove('visible'));
@@ -5226,6 +5954,152 @@ function jumpTo(id){
     window.scrollTo({top:y,behavior:'smooth'});
   }
 }
+const TLFR=[
+{an:"1892",cat:"loi",t:{fr:"Le monopole médical est déjà verrouillé",en:"The medical monopoly is already sealed"},d:{fr:"La loi du 30 novembre 1892 sur l'exercice de la médecine fonde le délit d'exercice illégal. C'est elle, et non un texte de 1962, qui servira de base juridique à toutes les poursuites contre les ostéopathes.",en:"The Act of 30 November 1892 on the practice of medicine creates the offence of illegal practice. It is this Act, not any 1962 text, that will ground every prosecution of osteopaths."}},
+{an:"1913",cat:"eco",t:{fr:"Moutin et Mann, premier livre français",en:"Moutin and Mann, the first French book"},d:{fr:"Le D<sup>r</sup> Lucien Moutin et G.-A. Mann publient le <i>Manuel d'ostéopathie pratique</i>, d'après Still et Wilfred L. Riggs, « à l'usage des élèves de l'École d'ostéopathie ». Numérisé sur Gallica. On ignore de quelle école il s'agit.",en:"Dr Lucien Moutin and G.-A. Mann publish the <i>Manuel d'ostéopathie pratique</i>, after Still and Wilfred L. Riggs, \"for the use of the students of the School of Osteopathy\". Digitised on Gallica. Which school remains unknown."}},
+{an:"4 juillet 1913",cat:"med",t:{fr:"Robert Lavezzari soutient sa thèse",en:"Robert Lavezzari defends his thesis"},d:{fr:"À la faculté de médecine de Montpellier, sur l'hystérie. Il n'est pas encore question d'ostéopathie.",en:"At the Montpellier faculty of medicine, on hysteria. Osteopathy is not yet in the picture."}},
+{an:"vers 1918",cat:"med",t:{fr:"Lavezzari commence à manipuler à Nice",en:"Lavezzari starts manipulating in Nice"},d:{fr:"Après avoir découvert l'ostéopathie par un article de l'Américaine <b>Florence Gair</b>, élève de Still. Le récit est professionnel et non recoupé.",en:"After discovering osteopathy through an article by the American <b>Florence Gair</b>, a pupil of Still. The account is professional and uncorroborated."}},
+{an:"1932",cat:"med",t:{fr:"Premier enseignement, au Dispensaire Hahnemann",en:"First teaching, at the Dispensaire Hahnemann"},d:{fr:"Lavezzari enseigne l'ostéopathie à des médecins dans un dispensaire homéopathique parisien. L'ostéopathie entre en France par les médecines non conventionnelles.",en:"Lavezzari teaches osteopathy to physicians in a Parisian homeopathic dispensary. Osteopathy enters France through unconventional medicine."}},
+{an:"1949",cat:"med",t:{fr:"Le premier ouvrage français",en:"The first French book"},d:{fr:"Robert Lavezzari publie <i>L'ostéopathie, une nouvelle méthode clinique et thérapeutique</i>, destiné aux médecins.",en:"Robert Lavezzari publishes <i>L'ostéopathie, une nouvelle méthode clinique et thérapeutique</i>, aimed at physicians."}},
+{an:"1951",cat:"eco",t:{fr:"Gény et Potter lancent les séminaires",en:"Gény and Potter launch the seminars"},d:{fr:"<b>Paul Gény</b> (1912-1996) et <b>Jacques Potter</b>, masseurs-kinésithérapeutes, créent une société de recherche ostéopathique et organisent des séminaires intensifs pour non-médecins.",en:"<b>Paul Gény</b> (1912-1996) and <b>Jacques Potter</b>, physiotherapists, set up an osteopathic research society and run intensive seminars for non-physicians."}},
+{an:"1951 ou 1952 ?",cat:"med",t:{fr:"Société Française d'Ostéopathie",en:"Société Française d'Ostéopathie"},d:{fr:"Fondée par Lavezzari avec <b>Pascal Piedalu</b>, <b>Jean Thierry-Mieg</b> et <b>Roger Lescure</b>. Réservée aux médecins. Lavezzari la préside jusqu'à sa mort en 1977. La SFO se date de 1952, Osteopedia UK de 1951.",en:"Founded by Lavezzari with <b>Pascal Piedalu</b>, <b>Jean Thierry-Mieg</b> and <b>Roger Lescure</b>. Physicians only. Lavezzari chairs it until his death in 1977. The SFO dates itself to 1952, Osteopedia UK to 1951."}},
+{an:"1953",cat:"med",t:{fr:"Le syndicat des médecins ostéopathes",en:"The physician-osteopaths' union"},d:{fr:"<b>Robert Maigne</b> et des confrères fondent le SNMOFUF, renommé SNMOF en 1958. Réservé aux médecins.",en:"<b>Robert Maigne</b> and colleagues found the SNMOFUF, renamed SNMOF in 1958. Physicians only."}},
+{an:"1950-1956 ?",cat:"eco",t:{fr:"École française d'ostéopathie",en:"École française d'ostéopathie"},d:{fr:"Première école française, fondée par Paul Gény. Trois dates circulent, 1950, 1956, ou 1965 par télescopage avec le transfert à Londres. Les enseignants britanniques sont <b>John Wernham</b>, <b>Parnell Bradbury</b>, <b>Denis Brookes</b>, <b>Tom Dummer</b>.",en:"The first French school, founded by Paul Gény. Three dates circulate, 1950, 1956, or 1965 by collapse with the London transfer. The British teachers are <b>John Wernham</b>, <b>Parnell Bradbury</b>, <b>Denis Brookes</b>, <b>Tom Dummer</b>."}},
+{an:"1959",cat:"med",t:{fr:"SOFMMOM, la médecine manuelle des médecins",en:"SOFMMOM, physicians' manual medicine"},d:{fr:"Robert Maigne (1923-2012), rhumatologue formé un an à la British School of Osteopathy auprès de <b>Myron Beal</b>, fonde une société savante réservée aux médecins et introduit la manipulation dans les facultés françaises. Concept du dérangement intervertébral mineur.",en:"Robert Maigne (1923-2012), a rheumatologist trained for a year at the British School of Osteopathy under <b>Myron Beal</b>, founds a physicians-only learned society and brings manipulation into French faculties. Concept of the minor intervertebral derangement."}},
+{an:"1959",cat:"ost",t:{fr:"Trédaniel fonde l'AOI",en:"Trédaniel founds the AOI"},d:{fr:"<b>Christian Trédaniel</b>, kinésithérapeute formé à la chiropraxie aux États-Unis en 1958, crée l'Association ostéopathique internationale.",en:"<b>Christian Trédaniel</b>, a physiotherapist trained in chiropractic in the United States in 1958, creates the International Osteopathic Association."}},
+{an:"6 janvier 1962",cat:"loi",t:{fr:"L'arrêté qu'on appelle « le décret »",en:"The order everyone calls \"the decree\""},d:{fr:"Arrêté fixant la liste des actes médicaux réservés aux médecins, dont « toute mobilisation forcée des articulations ». Ce n'est pas un décret et l'ostéopathie n'y est pas nommée. Toujours en vigueur, modifié en mai 2024.",en:"Ministerial order listing the medical acts reserved to physicians, including \"any forced mobilisation of the joints\". Not a decree, and osteopathy is not named in it. Still in force, amended in May 2024."}},
+{an:"1963",cat:"ost",t:{fr:"L'étiopathie, ou changer de nom pour survivre",en:"Etiopathy, or changing the name to survive"},d:{fr:"Trédaniel dépose le mot « étiopathie ». Le motif est explicite, les non-médecins ne peuvent pas enseigner sous le nom d'ostéopathie. L'institut devient suisse en 1967, Collège européen d'étiopathie en 1971.",en:"Trédaniel registers the word \"etiopathy\". The motive is explicit, non-physicians cannot teach under the name of osteopathy. The institute becomes Swiss in 1967, European College of Etiopathy in 1971."}},
+{an:"30 novembre 1964",cat:"eco",t:{fr:"L'ostéopathie crânienne arrive à Paris",en:"Cranial osteopathy reaches Paris"},d:{fr:"<b>Denis Brookes</b> organise le premier séminaire crânien français avec trois élèves de Sutherland, <b>Harold Magoun</b>, <b>Viola Frymann</b> et <b>Thomas Schooley</b>. Trois Français formés chez Gény y réussissent le test de palpation, <b>René Quéguiner</b>, <b>Francis Peyralade</b>, <b>Bernard Barillon</b>.",en:"<b>Denis Brookes</b> organises the first French cranial seminar with three pupils of Sutherland, <b>Harold Magoun</b>, <b>Viola Frymann</b> and <b>Thomas Schooley</b>. Three Frenchmen trained by Gény pass the palpation test, <b>René Quéguiner</b>, <b>Francis Peyralade</b>, <b>Bernard Barillon</b>."}},
+{an:"1965",cat:"eco",t:{fr:"L'exil à Londres",en:"The exile to London"},d:{fr:"Gény transfère l'EFO au British College of Naturopathy and Osteopathy, avec le soutien de <b>Tom Dummer</b> et <b>Margery Bloomfield</b>. Seize élèves français traversent la Manche pour finir leur formation.",en:"Gény moves the EFO to the British College of Naturopathy and Osteopathy, with the support of <b>Tom Dummer</b> and <b>Margery Bloomfield</b>. Sixteen French students cross the Channel to finish their training."}},
+{an:"1968",cat:"med",t:{fr:"Maigne cofonde la FIMM",en:"Maigne co-founds the FIMM"},d:{fr:"Fédération internationale de médecine manuelle, réseau international de médecins manipulateurs.",en:"International Federation for Manual Medicine, an international network of manipulating physicians."}},
+{an:"1971",cat:"eco",t:{fr:"Maidstone",en:"Maidstone"},d:{fr:"L'école s'installe dans le Kent sous la direction de Tom Dummer et s'ouvre à toute l'Europe.",en:"The school moves to Kent under Tom Dummer's direction and opens to the whole of Europe."}},
+{an:"3 mars 1973",cat:"ost",t:{fr:"AFDO, la défense s'organise",en:"AFDO, the defence organises"},d:{fr:"L'Association française de défense de l'ostéopathie est créée à Villeurbanne par des diplômés de Maidstone. Elle deviendra le SFDO en 1995.",en:"The French Association for the Defence of Osteopathy is created in Villeurbanne by Maidstone graduates. It will become the SFDO in 1995."}},
+{an:"1974",cat:"eco",t:{fr:"European School of Osteopathy",en:"European School of Osteopathy"},d:{fr:"L'école prend son nom définitif. Elle formera les ostéopathes français, belges, suisses, italiens et espagnols qui obtiendront la reconnaissance dans leurs pays.",en:"The school takes its final name. It will train the French, Belgian, Swiss, Italian and Spanish osteopaths who will win recognition at home."}},
+{an:"10 avril 1976",cat:"ost",t:{fr:"Fédération française d'ostéopathie",en:"French Federation of Osteopathy"},d:{fr:"Créée à Montpellier, elle deviendra la Fédération des ostéopathes de France.",en:"Created in Montpellier, it will become the Federation of Osteopaths of France."}},
+{an:"1978",cat:"eco",t:{fr:"SERETO",en:"SERETO"},d:{fr:"René Quéguiner et Francis Peyralade (1928-2013) fondent la Société d'enseignement, d'études et de recherche des techniques ostéopathiques.",en:"René Quéguiner and Francis Peyralade (1928-2013) found the Society for the Teaching, Study and Research of Osteopathic Techniques."}},
+{an:"1979",cat:"eco",t:{fr:"Faculté libre d'étiopathie de Paris",en:"Free Faculty of Etiopathy, Paris"},d:{fr:"Trédaniel ouvre à Paris l'école qui existe toujours sous le nom de Faculté française d'étiopathie.",en:"Trédaniel opens in Paris the school that still exists as the French Faculty of Etiopathy."}},
+{an:"23 avril 1981",cat:"ost",t:{fr:"Le Registre des Ostéopathes de France",en:"The Register of Osteopaths of France"},d:{fr:"Statuts déposés en préfecture des Bouches-du-Rhône par <b>Robert Perronneaud-Ferré</b> (président), <b>Régis Godefroy</b> 1945-1992 (vice-président), <b>Jean Peyrière</b> (secrétaire) et <b>Jean Josse</b> 1934-1990 (trésorier). Le pari, s'appeler publiquement ostéopathe.",en:"Statutes filed with the Bouches-du-Rhône prefecture by <b>Robert Perronneaud-Ferré</b> (president), <b>Régis Godefroy</b> 1945-1992 (vice-president), <b>Jean Peyrière</b> (secretary) and <b>Jean Josse</b> 1934-1990 (treasurer). The wager, calling yourself an osteopath in public."}},
+{an:"2 juin 1981",cat:"loi",t:{fr:"Perronneaud-Ferré condamné",en:"Perronneaud-Ferré convicted"},d:{fr:"Six semaines après le dépôt des statuts, le président du ROF est condamné pour exercice illégal de la médecine. C'est la seule affaire nommée que les sources professionnelles conservent.",en:"Six weeks after filing the statutes, the ROF's president is convicted of illegal practice of medicine. It is the only named case professional sources have kept."}},
+{an:"1982",cat:"eco",t:{fr:"L'ostéopathie entre à l'université",en:"Osteopathy enters the university"},d:{fr:"Le professeur <b>Pierre Cornillot</b> ouvre le DUMENAT, diplôme universitaire de médecines naturelles, à Paris 13 - Bobigny. Une brèche, pas une porte.",en:"Professor <b>Pierre Cornillot</b> opens the DUMENAT, a university diploma in natural medicines, at Paris 13 - Bobigny. A breach, not a door."}},
+{an:"1983",cat:"ost",t:{fr:"Barral et Mercier, <i>Manipulations viscérales</i>",en:"Barral and Mercier, <i>Visceral Manipulation</i>"},d:{fr:"<b>Jean-Pierre Barral</b> et <b>Pierre Mercier</b> publient l'ouvrage fondateur de l'ostéopathie viscérale, qui deviendra l'un des grands produits d'exportation de l'ostéopathie française.",en:"<b>Jean-Pierre Barral</b> and <b>Pierre Mercier</b> publish the founding work of visceral osteopathy, which will become one of French osteopathy's great exports."}},
+{an:"1986",cat:"loi",t:{fr:"La TVA, ou l'ostéopathie n'est pas un soin",en:"VAT, or osteopathy is not care"},d:{fr:"Les ostéopathes exclusifs sont assujettis à la TVA, dont les professionnels de santé sont exemptés. Traduction fiscale d'un refus de statut. Il faudra un arrêt européen et la loi de finances rectificative de 2007 pour y mettre fin.",en:"Exclusive osteopaths are made liable for VAT, from which health professionals are exempt. The fiscal translation of a refused status. It will take a European ruling and the 2007 amending finance act to end it."}},
+{an:"12 décembre 1987",cat:"ost",t:{fr:"Union fédérale des ostéopathes de France",en:"Federal Union of Osteopaths of France"},d:{fr:"Aujourd'hui « Ostéopathes de France ».",en:"Today \"Ostéopathes de France\"."}},
+{an:"1988-1998",cat:"loi",t:{fr:"Les années noires",en:"The dark years"},d:{fr:"Intensification des poursuites pour exercice illégal, amendes lourdes, peines avec sursis, poursuites collectives de tous les ostéopathes d'une même ville. Aucune source professionnelle ne nomme un praticien, un tribunal ou une date de jugement. L'histoire de cette période reste à écrire.",en:"Prosecutions for illegal practice intensify, with heavy fines, suspended sentences and collective prosecutions of every osteopath in a town. No professional source names a practitioner, a court, or a judgment date. The history of this period remains to be written."}},
+{an:"26 janvier 1997",cat:"ost",t:{fr:"Académie d'Ostéopathie de France",en:"Académie d'Ostéopathie de France"},d:{fr:"Création d'une structure à vocation scientifique et de mémoire professionnelle.",en:"Creation of a body with a scientific and professional-memory remit."}},
+{an:"1999",cat:"loi",t:{fr:"Un rapport commandé, jamais retrouvé",en:"A commissioned report, never found"},d:{fr:"Le secrétariat d'État à la Santé commande un rapport sur les conditions d'exercice de l'ostéopathie. La chronologie professionnelle l'attribue à <b>Guy Nicolas</b>. Une réponse au Sénat en 2001 confirme l'existence d'un groupe de travail ; le rapport lui-même reste introuvable.",en:"The Secretariat of State for Health commissions a report on the conditions of osteopathic practice. Professional chronologies attribute it to <b>Guy Nicolas</b>. A 2001 Senate answer confirms a working group existed; the report itself cannot be found."}},
+{an:"4 mars 2002",cat:"loi",t:{fr:"Loi Kouchner, article 75",en:"The Kouchner Act, article 75"},d:{fr:"La loi n° 2002-303 réserve l'usage du titre d'ostéopathe aux titulaires d'un diplôme délivré par un établissement agréé, et rend la formation continue obligatoire. Elle protège un titre sans décrire un métier.",en:"Act no. 2002-303 reserves the title of osteopath to holders of a diploma from an approved establishment and makes continuing education compulsory. It protects a title without describing a job."}},
+{an:"6 août 2002",cat:"loi",t:{fr:"L'amnistie",en:"The amnesty"},d:{fr:"La loi n° 2002-1062 amnistie des infractions liées à l'exercice professionnel. Les organisations d'ostéopathes y voient l'effacement des condamnations des années noires ; le texte, lui, ne nomme pas l'ostéopathie.",en:"Act no. 2002-1062 amnesties offences linked to professional practice. Osteopathic organisations read it as erasing the dark-years convictions; the text itself does not name osteopathy."}},
+{an:"2004",cat:"ost",t:{fr:"Chambre Nationale des Ostéopathes",en:"National Chamber of Osteopaths"},d:{fr:"Nouvelle organisation représentative, dans un paysage syndical déjà dense.",en:"A new representative body, in an already crowded union landscape."}},
+{an:"25 mars 2007",cat:"loi",t:{fr:"Les deux décrets d'application",en:"The two implementing decrees"},d:{fr:"Décret n° 2007-435 sur les actes et conditions d'exercice, avec restrictions sur les manipulations cervicales et le nourrisson ; décret n° 2007-437 fixant la formation à 2 660 heures et l'agrément des écoles.",en:"Decree no. 2007-435 on acts and conditions of practice, with restrictions on cervical manipulation and infants; decree no. 2007-437 setting training at 2,660 hours and organising school approval."}},
+{an:"2007",cat:"loi",t:{fr:"Fin de l'assujettissement à la TVA",en:"End of VAT liability"},d:{fr:"Après un arrêt européen, la loi de finances rectificative met fin à vingt ans de discrimination fiscale.",en:"After a European ruling, the amending finance act ends twenty years of tax discrimination."}},
+{an:"12 juillet 2012",cat:"loi",t:{fr:"Entrée au répertoire ADELI",en:"Entry into the ADELI register"},d:{fr:"Les ostéopathes sont enregistrés auprès des Agences régionales de santé.",en:"Osteopaths are registered with the regional health agencies."}},
+{an:"12 septembre 2014",cat:"loi",t:{fr:"Décret n° 2014-1043, agrément des écoles",en:"Decree no. 2014-1043, school approval"},d:{fr:"Refonte de la procédure d'agrément des établissements de formation. Attention à la date, septembre et non décembre.",en:"Overhaul of the approval procedure for training establishments. Mind the date, September and not December."}},
+{an:"12 décembre 2014",cat:"loi",t:{fr:"Décret n° 2014-1505, la formation à 4 860 heures",en:"Decree no. 2014-1505, training at 4,860 hours"},d:{fr:"Cinq ans de formation, soit 3 360 heures théoriques et pratiques et 1 500 heures cliniques dont 150 consultations complètes validées, en sept domaines de compétence. Complété par deux arrêtés du même jour. C'est le référentiel actuel.",en:"Five years of training, that is 3,360 theoretical and practical hours and 1,500 clinical hours including 150 validated full consultations, in seven competency domains. Completed by two orders of the same day. This is the current framework."}},
+{an:"19 avril 2017",cat:"loi",t:{fr:"L'ostéopathie animale encadrée",en:"Animal osteopathy regulated"},d:{fr:"Décrets n° 2017-572 et 2017-573, sur la déontologie et les compétences exigées, avec une liste tenue par l'Ordre des vétérinaires.",en:"Decrees no. 2017-572 and 2017-573, on ethics and required competencies, with a list kept by the veterinary board."}},
+{an:"1<sup>er</sup> septembre 2021",cat:"eco",t:{fr:"Neuf écoles perdent leur agrément",en:"Nine schools lose their approval"},d:{fr:"Sur trente-et-une écoles évaluées, neuf perdent l'agrément pour dégradation de la qualité du cursus, huit voient leurs capacités réduites ou sont placées sous surveillance.",en:"Of thirty-one schools evaluated, nine lose approval for degraded course quality, eight have capacity cut or are placed under supervision."}},
+{an:"2021-2024",cat:"loi",t:{fr:"Le rapport de l'IGAS",en:"The IGAS report"},d:{fr:"Vingt-six recommandations, dont celle d'inscrire les ostéopathes au code de la santé publique comme auxiliaires médicaux, et celle de créer une autorité de régulation indépendante sur le modèle du General Osteopathic Council britannique.",en:"Twenty-six recommendations, including writing osteopaths into the Public Health Code as medical auxiliaries, and creating an independent regulator modelled on the British General Osteopathic Council."}},
+{an:"16 octobre 2024",cat:"loi",t:{fr:"Le passage au RPPS",en:"The move to the RPPS"},d:{fr:"Les ostéopathes quittent ADELI pour le Répertoire partagé des professionnels de santé. Le même identifiant que les professions réglementées, sans le statut.",en:"Osteopaths leave ADELI for the shared register of health professionals. The same identifier as regulated professions, without the status."}},
+{an:"4 décembre 2024",cat:"sci",t:{fr:"L'Académie de médecine sur le nourrisson",en:"The Academy of Medicine on infants"},d:{fr:"Mise en garde sur l'ostéopathie viscérale et crânienne chez le nouveau-né, jugée « pratique qui interroge ». La Société française de pédiatrie et l'Ordre des masseurs-kinésithérapeutes suivent ; le collectif Unité Pour l'Ostéopathie répond.",en:"A warning on visceral and cranial osteopathy in newborns, judged \"a questionable practice\". The French Society of Paediatrics and the physiotherapists' board follow; the Unité Pour l'Ostéopathie collective replies."}},
+{an:"28 juillet 2025",cat:"sci",t:{fr:"La DREES ne compte toujours pas les ostéopathes",en:"The DREES still does not count osteopaths"},d:{fr:"Le communiqué officiel sur la démographie des professionnels de santé exclut explicitement les ostéopathes. En 2026, il n'existe donc pas de statistique publique consolidée sur leur nombre.",en:"The official release on health workforce demography explicitly excludes osteopaths. As of 2026 there is therefore no consolidated public statistic on their number."}},
+{an:"16 juin 2026",cat:"loi",t:{fr:"La réponse du gouvernement",en:"The government's answer"},d:{fr:"Réponse à la question écrite du député <b>Romain Daubié</b> du 18 février 2025. Le gouvernement se dit attentif et renvoie à un projet de loi sur la régulation de l'enseignement supérieur privé. Le dossier est traité comme une question d'écoles, pas de santé.",en:"Answer to MP <b>Romain Daubié</b>'s written question of 18 February 2025. The government says it is attentive and points to a bill on regulating private higher education. The file is handled as a question of schools, not of health."}}
+];
+const CATFR={all:{fr:"Tout",en:"All"},med:{fr:"Médecins",en:"Physicians"},ost:{fr:"Ostéopathes",en:"Osteopaths"},loi:{fr:"Droit & institutions",en:"Law & institutions"},eco:{fr:"Écoles",en:"Schools"},sci:{fr:"Science & débat",en:"Science & debate"}};
+
+const WORLD=[
+{z:"eu",p:{fr:"Royaume-Uni",en:"United Kingdom"},an:"1993",tx:"Osteopaths Act 1993",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"General Osteopathic Council, registre depuis 2000",en:"General Osteopathic Council, register since 2000"},n:"~5 500"},
+{z:"eu",p:{fr:"France",en:"France"},an:"2002",tx:{fr:"Loi n° 2002-303, art. 75 ; décrets 2007 et 2014",en:"Act no. 2002-303, art. 75; decrees 2007 and 2014"},st:"🟢",mo:{fr:"Non-médical + voie médecins/kinés",en:"Non-medical + physician/physio route"},au:{fr:"Enregistrement ARS, RPPS depuis 2024 ; agrément des écoles par le ministère",en:"Regional health agency registration, RPPS since 2024; schools approved by the ministry"},n:"~30 000-37 000"},
+{z:"eu",p:{fr:"Suisse",en:"Switzerland"},an:"2007 → 2018",tx:{fr:"Diplôme intercantonal CDS, puis loi fédérale LPSan",en:"Intercantonal CDS diploma, then federal LPSan Act"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"GesReg, registre fédéral",en:"GesReg, federal register"},n:"~1 300"},
+{z:"eu",p:{fr:"Portugal",en:"Portugal"},an:"2003",tx:"Lei 45/2003 ; Lei 71/2013",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"ACSS",n:"~2 050"},
+{z:"eu",p:{fr:"Italie",en:"Italy"},an:"2018",tx:{fr:"Legge 3/2018 (Lorenzin) ; DPR 131/2021 ; équipollence 2026",en:"Legge 3/2018 (Lorenzin); DPR 131/2021; equivalence 2026"},st:"🟠",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Ministères Santé et Université ; ROI",en:"Health and University ministries; ROI"},n:"~12 000-13 600"},
+{z:"eu",p:{fr:"Danemark",en:"Denmark"},an:"2018",tx:{fr:"Règlement d'autorisation du 15 mai 2018",en:"Authorisation regulation of 15 May 2018"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Styrelsen for Patientsikkerhed",n:"~300-320"},
+{z:"eu",p:{fr:"Finlande",en:"Finland"},an:"1994",tx:{fr:"Loi 559/1994 sur les professionnels de santé",en:"Act 559/1994 on health professionals"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Valvira",n:"~500-530"},
+{z:"eu",p:{fr:"Islande",en:"Iceland"},an:"2005 / 2012",tx:{fr:"Loi n° 229/2005, consolidée 1131/2012",en:"Act no. 229/2005, consolidated 1131/2012"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Ministère de la Santé",en:"Ministry of Health"},n:"~6-8"},
+{z:"eu",p:{fr:"Norvège",en:"Norway"},an:"2022",tx:{fr:"Loi du 25 mars 2022 modifiant la loi sur le personnel de santé",en:"Act of 25 March 2022 amending the health personnel act"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Helsedirektoratet",n:"~375-500"},
+{z:"eu",p:{fr:"Malte",en:"Malta"},an:"2003",tx:"Health Care Professions Act, Cap. 464",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Council for the Professions Complementary to Medicine",n:"10-15"},
+{z:"eu",p:{fr:"Chypre",en:"Cyprus"},an:"2020",tx:"Loi N. 78(I) of 2020",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Cyprus Registration Board",n:"~18"},
+{z:"eu",p:{fr:"Luxembourg",en:"Luxembourg"},an:"2018",tx:{fr:"Loi du 21 août 2018",en:"Act of 21 August 2018"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Conseil supérieur de certaines professions de santé",en:"Higher Council of certain health professions"},n:"~250-300"},
+{z:"eu",p:{fr:"Liechtenstein",en:"Liechtenstein"},an:{fr:"aucune",en:"none"},tx:{fr:"Aligné sur le cadre européen",en:"Aligned with the European framework"},st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:{fr:"n.c.",en:"n/a"}},
+{z:"eu",p:{fr:"Belgique",en:"Belgium"},an:"1999",tx:{fr:"Loi Colla du 29 avril 1999, jamais réellement mise en œuvre",en:"Colla Act of 29 April 1999, never really implemented"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Aucun registre obligatoire opérationnel",en:"No operational compulsory register"},n:"~1 800"},
+{z:"eu",p:{fr:"Pays-Bas",en:"Netherlands"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi spécifique",en:"No specific legislation"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"NRO, registre privé volontaire",en:"NRO, private voluntary register"},n:"~700"},
+{z:"eu",p:{fr:"Allemagne",en:"Germany"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi ; arrêt OLG Düsseldorf 2015, l'ostéopathie est du Heilkunde",en:"No legislation; OLG Düsseldorf 2015, osteopathy is Heilkunde"},st:"⚕️",mo:{fr:"Médecins ou Heilpraktiker",en:"Physicians or Heilpraktiker"},au:{fr:"Aucun registre statutaire ; VOD, EROP",en:"No statutory register; VOD, EROP"},n:{fr:"~4 000 + ~2 500 médecins",en:"~4,000 + ~2,500 physicians"}},
+{z:"eu",p:{fr:"Autriche",en:"Austria"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi ; demande de reconnaissance déposée en 2024",en:"No legislation; recognition request filed in 2024"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~1 000"},
+{z:"eu",p:{fr:"Espagne",en:"Spain"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi ; norme UNE-EN 16686 publiée au BOE mais non transposée",en:"No legislation; UNE-EN 16686 published in the BOE but not transposed"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"ROE, volontaire",en:"ROE, voluntary"},n:"~9 400"},
+{z:"eu",p:{fr:"Irlande",en:"Ireland"},an:{fr:"aucune",en:"none"},tx:{fr:"Travaux en cours vers une régulation",en:"Work towards regulation under way"},st:"🟡",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Osteopathic Council of Ireland, volontaire",en:"Osteopathic Council of Ireland, voluntary"},n:"~157"},
+{z:"eu",p:{fr:"Suède",en:"Sweden"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi ; seul pays nordique sans autorisation",en:"No legislation; the only Nordic country without authorisation"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Registre associatif volontaire",en:"Voluntary association register"},n:"~456"},
+{z:"eu",p:{fr:"Grèce",en:"Greece"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune réglementation spécifique",en:"No specific regulation"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~35"},
+{z:"eu",p:{fr:"Pologne",en:"Poland"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi ; code professionnel 323010",en:"No legislation; occupational code 323010"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"TOP applique volontairement la norme CEN",en:"TOP voluntarily applies the CEN standard"},n:{fr:"n.c.",en:"n/a"}},
+{z:"eu",p:{fr:"Russie",en:"Russia"},an:"2015",tx:{fr:"Ordre du ministère de la Santé inscrivant l'ostéopathie au registre des spécialités médicales",en:"Health Ministry order adding osteopathy to the register of medical specialties"},st:"⚕️",mo:{fr:"Médical",en:"Medical"},au:{fr:"Ministère de la Santé, accréditation post-diplôme",en:"Ministry of Health, post-graduate accreditation"},n:{fr:"~1 500 médecins",en:"~1,500 physicians"}},
+{z:"am",p:{fr:"États-Unis",en:"United States"},an:{fr:"1897 / 1973",en:"1897 / 1973"},tx:{fr:"Législations d'État ; parité DO-MD dans les 50 États en 1973",en:"State legislation; DO-MD parity in all 50 states by 1973"},st:"🟢",mo:{fr:"Médical, le DO est médecin",en:"Medical, the DO is a physician"},au:{fr:"Boards d'État ; accréditation AOA/ACGME",en:"State boards; AOA/ACGME accreditation"},n:{fr:"> 167 000 DO",en:"> 167,000 DOs"}},
+{z:"am",p:{fr:"Canada",en:"Canada"},an:{fr:"Variable selon province",en:"Varies by province"},tx:{fr:"Aucune loi fédérale ; Alberta réglemente les DO ; projet d'ordre au Québec (2026)",en:"No federal law; Alberta regulates DOs; professional order proposed in Quebec (2026)"},st:"🔴 / 🟢",mo:{fr:"Mixte",en:"Mixed"},au:{fr:"Aucune, sauf Alberta ; OSTCAN volontaire",en:"None, except Alberta; OSTCAN voluntary"},n:{fr:"~2 900 ostéopathes",en:"~2,900 osteopaths"}},
+{z:"am",p:{fr:"Brésil",en:"Brazil"},an:"2011",tx:{fr:"Résolution COFFITO n° 398 du 3 août 2011",en:"COFFITO resolution no. 398 of 3 August 2011"},st:"⚕️",mo:{fr:"Spécialité de kinésithérapeute",en:"Physiotherapy specialty"},au:{fr:"COFFITO et CREFITO régionaux",en:"COFFITO and regional CREFITO"},n:{fr:"n.c.",en:"n/a"}},
+{z:"am",p:{fr:"Argentine",en:"Argentina"},an:{fr:"aucune",en:"none"},tx:{fr:"Aucune loi spécifique",en:"No specific legislation"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~139"},
+{z:"oc",p:{fr:"Australie",en:"Australia"},an:{fr:"années 1970 / 2010",en:"1970s / 2010"},tx:"Health Practitioner Regulation National Law Act 2009",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Osteopathy Board of Australia / AHPRA",n:"~2 741"},
+{z:"oc",p:{fr:"Nouvelle-Zélande",en:"New Zealand"},an:"2003",tx:"Health Practitioners Competence Assurance Act 2003",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"Osteopathic Council of New Zealand",n:"~735"},
+{z:"af",p:{fr:"Afrique du Sud",en:"South Africa"},an:"1982",tx:"Allied Health Professions Act 63 of 1982",st:"🟢",mo:{fr:"Non-médical",en:"Non-medical"},au:"AHPCSA",n:"~38"},
+{z:"af",p:{fr:"Émirats arabes unis",en:"United Arab Emirates"},an:{fr:"aucune",en:"none"},tx:{fr:"Licence délivrée par la DHA et le ministère de la Santé",en:"Licensing by the DHA and the Ministry of Health"},st:"🟢",mo:{fr:"Mixte",en:"Mixed"},au:"Dubai Health Authority",n:"~35"},
+{z:"as",p:{fr:"Inde",en:"India"},an:"2019",tx:{fr:"Reconnaissance du DO américain comme équivalent MBBS",en:"US DO recognised as MBBS-equivalent"},st:"🟢 / 🔴",mo:{fr:"Médical pour le DO américain",en:"Medical for the US DO"},au:"National Medical Commission",n:{fr:"n.c.",en:"n/a"}},
+{z:"as",p:{fr:"Japon",en:"Japan"},an:{fr:"aucune",en:"none"},tx:{fr:"Non réglementé",en:"Unregulated"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Associations privées",en:"Private associations"},n:"~96"},
+{z:"as",p:{fr:"Corée du Sud",en:"South Korea"},an:{fr:"aucune",en:"none"},tx:{fr:"Non réglementé ; chevauchement avec le chuna",en:"Unregulated; overlaps with chuna"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~101"},
+{z:"as",p:{fr:"Singapour",en:"Singapore"},an:{fr:"aucune",en:"none"},tx:{fr:"Non réglementé",en:"Unregulated"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~50"},
+{z:"as",p:{fr:"Chine",en:"China"},an:{fr:"aucune",en:"none"},tx:{fr:"Non réglementé comme profession distincte ; chevauchement avec le tuina",en:"Not regulated as a distinct profession; overlaps with tuina"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:{fr:"n.c.",en:"n/a"}},
+{z:"as",p:{fr:"Israël",en:"Israel"},an:{fr:"aucune",en:"none"},tx:{fr:"Non réglementé",en:"Unregulated"},st:"🔴",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"aucune",en:"none"},n:"~90"},
+{z:"as",p:{fr:"Turquie",en:"Türkiye"},an:"2014",tx:{fr:"Cadre GETAT sur les pratiques traditionnelles et complémentaires, statut précis à vérifier",en:"GETAT framework on traditional and complementary practices, precise status to be verified"},st:"🟡",mo:{fr:"Non-médical",en:"Non-medical"},au:{fr:"Ministère de la Santé",en:"Ministry of Health"},n:{fr:"n.c.",en:"n/a"}}
+];
+const ZONES={all:{fr:"Tous les pays",en:"All countries"},eu:{fr:"Europe",en:"Europe"},am:{fr:"Amériques",en:"Americas"},oc:{fr:"Océanie",en:"Oceania"},as:{fr:"Asie & Moyen-Orient",en:"Asia & Middle East"},af:{fr:"Afrique & Golfe",en:"Africa & Gulf"}};
+
+
+/* --- MOTEUR CHAPITRE FRANCE --- */
+function TF(o){return (o&&typeof o==='object')?(o[lang]||o.fr):o}
+let tlfrcat='all';
+function buildFR(){
+  const fb=document.getElementById('frfilters'); if(!fb) return;
+  fb.innerHTML=Object.keys(CATFR).map(k=>'<button data-k="'+k+'" class="'+(k===tlfrcat?'on':'')+'">'+TF(CATFR[k])+'</button>').join('');
+  fb.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{tlfrcat=b.dataset.k;buildFR()}));
+  const tl=document.getElementById('frtimeline'); if(!tl) return;
+  tl.innerHTML=TLFR.filter(e=>tlfrcat==='all'||e.cat===tlfrcat).map(e=>
+    '<div class="tl-item"><span class="cat">'+TF(CATFR[e.cat])+'</span><div class="an">'+e.an+'</div><h4>'+TF(e.t)+'</h4><p>'+TF(e.d)+'</p></div>').join('');
+}
+let wzone='all';
+function buildWorld(){
+  const fb=document.getElementById('wfilters'); if(!fb) return;
+  fb.innerHTML=Object.keys(ZONES).map(k=>'<button data-k="'+k+'" class="'+(k===wzone?'on':'')+'">'+TF(ZONES[k])+'</button>').join('');
+  fb.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{wzone=b.dataset.k;buildWorld()}));
+  const tb=document.getElementById('wbody'); if(!tb) return;
+  tb.innerHTML=WORLD.filter(r=>wzone==='all'||r.z===wzone).map(r=>
+    '<tr><td><b>'+TF(r.p)+'</b></td><td>'+TF(r.an)+'</td><td>'+TF(r.tx)+'</td><td style="font-size:18px;text-align:center">'+r.st+'</td><td>'+TF(r.mo)+'</td><td>'+TF(r.au)+'</td><td>'+TF(r.n)+'</td></tr>').join('');
+}
+
+/* --- ÉVALUATION CHAPITRE 5 --- */
+QUIZ.cfr={fr:{titre:"Dix questions sur l'histoire française",qs:[
+ {q:"Quelle est la première trace documentée de l'ostéopathie en France ?",o:["La thèse de Robert Lavezzari, 1913","Le <em>Manuel d'ostéopathie pratique</em> de Moutin et Mann, 1913","La fondation de la Société Française d'Ostéopathie","Les séminaires de Paul Gény, 1951"],a:1,e:"L'ouvrage est numérisé sur Gallica. Sa page de titre mentionne une « École d'ostéopathie » que personne n'a encore identifiée. La thèse de Lavezzari, la même année, porte sur l'hystérie et non sur l'ostéopathie."},
+ {q:"Le texte de 1962 que l'on appelle « le décret » est en fait…",o:["Un décret du Conseil d'État","Une loi votée au Parlement","Un arrêté du 6 janvier 1962 fixant la liste des actes réservés aux médecins","Une circulaire de l'Ordre des médecins"],a:2,e:"C'est un arrêté, il ne nomme pas l'ostéopathie, et il est toujours en vigueur. Le fondement réel des poursuites reste la loi du 30 novembre 1892 sur l'exercice de la médecine."},
+ {q:"Qui introduit les manipulations vertébrales dans les facultés de médecine françaises ?",o:["Robert Lavezzari","Paul Gény","Robert Maigne","Christian Trédaniel"],a:2,e:"Maigne, rhumatologue formé un an à la British School of Osteopathy, rapporte les techniques sans la philosophie et fonde une médecine manuelle réservée aux médecins."},
+ {q:"Pourquoi Christian Trédaniel dépose-t-il le mot « étiopathie » en 1963 ?",o:["Pour se démarquer scientifiquement de Still","Parce que les non-médecins ne peuvent pas enseigner sous le nom d'ostéopathie","Pour protéger une marque commerciale","Sur demande de l'Ordre des médecins"],a:1,e:"C'est une stratégie de survie linguistique, assumée comme telle, qui a fini par produire une discipline distincte."},
+ {q:"Que devient l'École française d'ostéopathie après 1962 ?",o:["Elle ferme définitivement","Elle est transférée à Londres en 1965, puis à Maidstone en 1971, et devient l'ESO en 1974","Elle est absorbée par une faculté de médecine","Elle est rebaptisée Collège ostéopathique européen"],a:1,e:"La répression française a produit la principale école d'ostéopathie d'Europe, qui a ensuite formé les ostéopathes de tout le continent."},
+ {q:"Qui fonde le Registre des Ostéopathes de France en avril 1981 ?",o:["Paul Gény et Jacques Potter","Robert Maigne et Robert Lavezzari","Robert Perronneaud-Ferré, Régis Godefroy, Jean Peyrière et Jean Josse","Jean-Pierre Barral et Pierre Mercier"],a:2,e:"Six semaines après le dépôt des statuts, Perronneaud-Ferré est condamné pour exercice illégal de la médecine."},
+ {q:"Que fait exactement l'article 75 de la loi du 4 mars 2002 ?",o:["Il crée un ordre professionnel","Il réserve l'usage du titre d'ostéopathe aux diplômés d'un établissement agréé","Il inscrit les ostéopathes au code de la santé publique","Il ouvre le remboursement par l'Assurance maladie"],a:1,e:"Il protège un titre sans décrire un métier. Ni la durée de formation, ni le champ d'exercice, ni les actes ne sont définis avant les décrets de 2007."},
+ {q:"Combien d'heures compte la formation initiale depuis le décret du 12 décembre 2014 ?",o:["2 660 heures","3 360 heures","4 860 heures","5 500 heures"],a:2,e:"3 360 heures d'enseignement et 1 500 heures cliniques dont 150 consultations complètes validées, sur cinq ans, en sept domaines de compétence."},
+ {q:"Combien y a-t-il d'ostéopathes en France en 2026 ?",o:["Environ 15 000","Environ 30 000","Environ 37 000","La donnée publique consolidée n'existe pas"],a:3,e:"Les chiffres disponibles vont de 15 043 « actifs » à 41 579 inscrits selon les définitions et les fichiers. La DREES n'inclut toujours pas les ostéopathes dans sa diffusion statistique officielle."},
+ {q:"Que reproche la recherche récente aux lois de Fryette ?",o:["Elles n'ont jamais été enseignées","Testées sur 531 vertèbres en 2024, elles ne sont compatibles que dans 57 % des cas","Elles ont été inventées après 1990","Elles ne concernent que le rachis cervical"],a:1,e:"Statistiquement significatif, cliniquement très loin d'une loi biomécanique fiable. Elles restent un outil pédagogique, elles cessent d'être une description du réel."}
+]},
+en:{titre:"Ten questions on the French story",qs:[
+ {q:"What is the first documented trace of osteopathy in France?",o:["Robert Lavezzari's thesis, 1913","Moutin and Mann's <em>Manuel d'ostéopathie pratique</em>, 1913","The founding of the Société Française d'Ostéopathie","Paul Gény's seminars, 1951"],a:1,e:"The book is digitised on Gallica. Its title page mentions a \"School of Osteopathy\" nobody has yet identified. Lavezzari's thesis, the same year, is on hysteria, not osteopathy."},
+ {q:"The 1962 text usually called \"the decree\" is in fact…",o:["A decree of the Conseil d'État","An Act of Parliament","A ministerial order of 6 January 1962 listing acts reserved to physicians","A circular from the medical board"],a:2,e:"It is an order, it does not name osteopathy, and it is still in force. The real basis for prosecutions remains the Act of 30 November 1892 on the practice of medicine."},
+ {q:"Who brought spinal manipulation into French medical faculties?",o:["Robert Lavezzari","Paul Gény","Robert Maigne","Christian Trédaniel"],a:2,e:"Maigne, a rheumatologist trained for a year at the British School of Osteopathy, brought back the techniques without the philosophy and founded a manual medicine restricted to physicians."},
+ {q:"Why did Christian Trédaniel register the word \"etiopathy\" in 1963?",o:["To distance himself scientifically from Still","Because non-physicians could not teach under the name of osteopathy","To protect a trademark","At the request of the medical board"],a:1,e:"A strategy of linguistic survival, openly acknowledged as such, which ended up producing a distinct discipline."},
+ {q:"What became of the École française d'ostéopathie after 1962?",o:["It closed for good","It moved to London in 1965, then Maidstone in 1971, becoming the ESO in 1974","It was absorbed by a medical faculty","It was renamed the European Osteopathic College"],a:1,e:"French repression produced Europe's leading school of osteopathy, which then trained osteopaths across the continent."},
+ {q:"Who founded the Register of Osteopaths of France in April 1981?",o:["Paul Gény and Jacques Potter","Robert Maigne and Robert Lavezzari","Robert Perronneaud-Ferré, Régis Godefroy, Jean Peyrière and Jean Josse","Jean-Pierre Barral and Pierre Mercier"],a:2,e:"Six weeks after the statutes were filed, Perronneaud-Ferré was convicted of illegal practice of medicine."},
+ {q:"What exactly does article 75 of the Act of 4 March 2002 do?",o:["It creates a professional order","It reserves the title of osteopath to graduates of an approved establishment","It writes osteopaths into the Public Health Code","It opens reimbursement by the national health insurance"],a:1,e:"It protects a title without describing a job. Neither training length, nor scope of practice, nor permitted acts are defined before the 2007 decrees."},
+ {q:"How many hours does initial training take under the decree of 12 December 2014?",o:["2,660 hours","3,360 hours","4,860 hours","5,500 hours"],a:2,e:"3,360 teaching hours and 1,500 clinical hours including 150 validated full consultations, over five years, in seven competency domains."},
+ {q:"How many osteopaths are there in France in 2026?",o:["About 15,000","About 30,000","About 37,000","No consolidated public figure exists"],a:3,e:"Available figures range from 15,043 \"active\" to 41,579 registered depending on definitions and files. The DREES still does not include osteopaths in its official statistics."},
+ {q:"What does recent research say about Fryette's laws?",o:["They were never taught","Tested on 531 vertebrae in 2024, they hold in only 57% of cases","They were invented after 1990","They apply only to the cervical spine"],a:1,e:"Statistically significant, clinically a long way from a reliable biomechanical law. They remain a teaching tool, they cease to be a description of reality."}
+]}};
+
+CHRONOS.cfr={fr:{titre:"L'histoire française, dans l'ordre",items:[["Manuel de Moutin et Mann","1913"],["Premier enseignement de Lavezzari au Dispensaire Hahnemann","1932"],["Séminaires de Paul Gény pour non-médecins","1951"],["Arrêté sur les actes réservés aux médecins","1962"],["Premier séminaire crânien français","1964"],["Transfert de l'école à Londres","1965"],["Dépôt des statuts du Registre des Ostéopathes de France","1981"],["Loi Kouchner, article 75","2002"],["Décrets sur les actes et la formation","2007"],["Formation portée à 4 860 heures","2014"],["Passage des ostéopathes au RPPS","2024"]]},
+ en:{titre:"The French story, in order",items:[["Moutin and Mann's manual","1913"],["Lavezzari's first teaching at the Dispensaire Hahnemann","1932"],["Paul Gény's seminars for non-physicians","1951"],["Order on acts reserved to physicians","1962"],["First French cranial seminar","1964"],["The school moves to London","1965"],["Statutes of the Register of Osteopaths of France filed","1981"],["Kouchner Act, article 75","2002"],["Decrees on acts and training","2007"],["Training raised to 4,860 hours","2014"],["Osteopaths move to the RPPS","2024"]]}};
+
+REFLEX.cfr={fr:{titre:"Question de réflexion, à rédiger en 10 à 15 lignes",q:"Les organisations professionnelles françaises racontent toutes les « années noires » sans jamais nommer un procès, un praticien ou un tribunal. Que dit ce silence sur la manière dont une profession écrit sa propre histoire, et comment y remédier ?",pistes:"<b>Pistes pour vous auto-évaluer.</b> Avez-vous distingué la mémoire professionnelle de l'archive, et montré que la première peut être sincère sans être documentée ? Avez-vous relevé que le seul cas nommé, Perronneaud-Ferré en 1981, précède de sept ans la période concernée ? Avez-vous proposé des sources concrètes pour combler la lacune, presse quotidienne 1988-1998, bases de jurisprudence, archives judiciaires, entretiens avec des praticiens de l'époque ? Avez-vous conclu sur ce que la profession gagnerait à documenter réellement cet épisode plutôt qu'à le commémorer ?"},
+ en:{titre:"Reflection question, to write in 10 to 15 lines",q:"French professional organisations all recount the \"dark years\" without ever naming a trial, a practitioner or a court. What does this silence say about how a profession writes its own history, and how could it be remedied?",pistes:"<b>Prompts for self-assessment.</b> Did you separate professional memory from archive, and show the first can be sincere without being documented? Did you notice that the only named case, Perronneaud-Ferré in 1981, precedes the period by seven years? Did you propose concrete sources to fill the gap, daily press 1988-1998, case-law databases, court archives, interviews with practitioners of the time? Did you conclude on what the profession would gain by actually documenting this episode rather than commemorating it?"}};
 </script>
 </body>
 </html>
